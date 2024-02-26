@@ -18,7 +18,7 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <main name="main"/>
+  <main name="adder1"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -118,7 +118,24 @@
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="adder1"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="downloadBoard" val="BASYS3"/>
     <a name="simulationFrequency" val="1.0"/>
+    <boardmap boardname="BASYS3">
+      <mc key="/A0" map="647,323"/>
+      <mc key="/A1" map="609,323"/>
+      <mc key="/A2" map="571,323"/>
+      <mc key="/A3" map="535,323"/>
+      <mc key="/B0" map="497,323"/>
+      <mc key="/B1" map="456,323"/>
+      <mc key="/B2" map="417,323"/>
+      <mc key="/B3" map="382,323"/>
+      <mc key="/S0" map="649,295"/>
+      <mc key="/S1" map="612,295"/>
+      <mc key="/S2" map="577,295"/>
+      <mc key="/S3" map="538,295"/>
+      <mc key="/cin" map="582,238"/>
+      <mc key="/cout" map="499,295"/>
+    </boardmap>
     <comp lib="0" loc="(160,130)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="A0"/>
@@ -185,10 +202,18 @@
       <a name="label" val="cout"/>
       <a name="output" val="true"/>
     </comp>
-    <comp loc="(400,130)" name="main"/>
-    <comp loc="(400,270)" name="main"/>
-    <comp loc="(400,420)" name="main"/>
-    <comp loc="(400,580)" name="main"/>
+    <comp loc="(400,130)" name="main">
+      <a name="label" val="main_1"/>
+    </comp>
+    <comp loc="(400,270)" name="main">
+      <a name="label" val="main_2"/>
+    </comp>
+    <comp loc="(400,420)" name="main">
+      <a name="label" val="main_3"/>
+    </comp>
+    <comp loc="(400,580)" name="main">
+      <a name="label" val="main_4"/>
+    </comp>
     <wire from="(160,130)" to="(180,130)"/>
     <wire from="(160,150)" to="(180,150)"/>
     <wire from="(160,170)" to="(180,170)"/>
