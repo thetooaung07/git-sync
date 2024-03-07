@@ -1,0 +1,5 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Failure:  Simulation finished. Check the waveforms. 
+Time: 320 ns  Iteration: 0  Process: /multiplier_test/stim_proc  File: X:/BIE-SAP/twobytwomulti/twobytwomulti.srcs/sim_1/imports/Downloads/l3_multiplier_test.vhd
+$finish called at time : 320 ns : File "X:/BIE-SAP/twobytwomulti/twobytwomulti.srcs/sim_1/imports/Downloads/l3_multiplier_test.vhd" Line 68
