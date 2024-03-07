@@ -18,7 +18,7 @@
   <lib desc="#BFH-Praktika" name="9"/>
   <lib desc="#Input/Output-Extra" name="10"/>
   <lib desc="#Soc" name="11"/>
-  <main name="main"/>
+  <main name="adder1"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -85,9 +85,7 @@
     </comp>
     <comp lib="1" loc="(490,250)" name="AND Gate"/>
     <comp lib="1" loc="(490,350)" name="AND Gate"/>
-    <comp lib="1" loc="(530,140)" name="XOR Gate">
-      <a name="xor" val="odd"/>
-    </comp>
+    <comp lib="1" loc="(530,140)" name="XOR Gate"/>
     <comp lib="1" loc="(620,290)" name="OR Gate"/>
     <wire from="(220,100)" to="(240,100)"/>
     <wire from="(220,140)" to="(260,140)"/>

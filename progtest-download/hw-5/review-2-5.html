@@ -1,0 +1,1678 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml-transitional.dtd"><html><head>
+<link rel="icon" data-savepage-href="https://progtest.fit.cvut.cz/favicon.ico" href="data:image/vnd.microsoft.icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAxHMAAP+EAAD/tU0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAgMAAAAAAAAAAAAAAAABAgICAwAAAAAAAAAAAAAAAQICAgMAAAAAAAAAAgICAgICAgICAgICAwAAAAICAgICAgICAgICAgIAAAACAgICAgICAgICAgICAAAAAwMCAgICAgICAgICAgMDAAAAAwICAgICAgICAgICAgMAAAADAgICAgICAgICAgICAAADAgICAgICAgICAgICAwEBAgICAgICAgICAgIBAQACAgICAgMAAwICAgICAAAAAgICAgEAAAADAgICAgAAAAICAgIBAAAAAwICAgIAAAACAgICAQAAAAMCAgICAAAAAAAAAAAAAAAAAAAAAAAAAPj/AADwfwAA8H8AAAAHAAAABwAAAAcAAAABAADAAAAA4AAAAMAAAAAAAQAAAgcAAAcHAAAHBwAABwcAAP//AAA=">
+  <title>aungthet@progtest.fit.cvut.cz - ProgTest</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style data-savepage-href="/css.css" type="text/css">body                 { background-color: #828273; font-size: 10px; color: #000000; font-family: "Tahoma"; margin-left: 0px; margin-right: 0px; margin-top: 0px; margin-bottom: 0px }
+form                 { padding: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
+input, button, select, tr
+                     { font-family: "Tahoma"; font-size: 12px; }
+
+
+a                    { text-decoration: none; color: #000000; font-weight: bold }
+a:hover              { text-decoration: none; color: #FFFFFF; font-weight: bold }
+
+
+
+.menu                { cursor: default; background-color: #00CCFF; }
+.menuPane            { position: absolute; display: none; background-color: #00CCFF; border: solid 1px #000000; }
+.menuSep             { width: 90%; height: 1px; font-size: 0px; background-color: black; }
+
+.item, .itemLo, .itemHi  { cursor: default; font-family: Tahoma, Verdana, sans-serif; font-size: 12px; padding-top: 0.2em; padding-bottom: 0.2em; padding-left: 0.4em; padding-right: 0.4em; }
+.itemLo              { font-weight: bold; }
+.itemHi              { font-weight: bold; background-color: #0088CC; }
+
+.navLink             { font-size: 16px; }
+
+.ac                  { text-align: center }
+.al                  { text-align: left }
+.ar                  { text-align: right }
+
+
+
+.w20                 { width: 20px }
+.w35                 { width: 40px }
+.w40                 { width: 40px }
+.w50                 { width: 50px }
+.w65                 { width: 65px }
+.w70                 { width: 70px }
+.w80                 { width: 80px }
+.w100                { width: 100px }
+.w120                { width: 120px }
+.w200                { width: 200px }
+.w270                { width: 270px }
+.w450                { width: 450px }
+.fw                  { width: 100% }
+.w80p                { width: 80% }
+.w50p                { width: 50% }
+.float               { float: left }
+
+
+.fntSmall            { font-size: 8px }
+
+.menuList            { font-size: 16px; font-weight: bold; }
+.menuListEarly       { font-size: 16px; font-weight: bold; color: #008000; }
+.menuListLate        { font-size: 16px; font-weight: bold; color: #800000; }
+.menuListDis         { font-size: 16px; font-weight: bold; color: #606060; }
+
+.outBox              { background-color: #AAAAAA; border-color: #CCCCCC #666666 #666666 #CCCCCC; border-style: solid; border-width: 2px }
+.outBox1             { background-color: #AAAAAA; border-color: #CCCCCC #666666 #666666 #CCCCCC; border-style: solid; border-left-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-top-width: 0px }
+
+.titleBox            { font-weight: bold; background-color: #0099CC; border-color: #007799 #00BBEE #00BBEE #007799; border-style: solid; border-width: 1px }
+.bigTitleBox         { font-weight: bold; font-size: 20px; text-align: center; background-color: #0099CC; border-color: #007799 #00BBEE #00BBEE #007799; border-style: solid; border-width: 1px }
+
+.topLayout           { width: 94% }
+
+.insBox              { width: 400px }
+.insLab              { background-color: #AAAAAA; border-color: #CCCCCC #666666 #666666 #CCCCCC; border-style: solid; border-width: 1px }
+
+
+table.listLayout 
+{ 
+  border-spacing: 0px;
+  border-collapse: separate;
+  width: 94% 
+}
+table.listLayout > thead > tr > td
+{
+  padding: 0px; 
+  border-width: 0px;	
+}
+table.listLayout > tbody > tr
+{
+  background-color: #AAAAAA;
+}
+table.listLayout > tbody > tr:hover
+{
+  background-color: #cccccc;	
+}
+table.listLayout > tbody > tr > td
+{
+  border-color: #CCCCCC #666666 #666666 #CCCCCC;
+  border-style: solid; 
+  padding: 2px 2px; 
+  border-width: 2px 0px;	
+}
+table.listLayout > tbody > tr > td:first-child
+{
+  border-left-width: 2px;
+}
+table.listLayout > tbody > tr > td:last-child
+{
+  border-right-width: 2px;
+}
+
+.lBox, .mBox, .mtBox, .mbBox, .rBox { background-color: #AAAAAA; border-color: #CCCCCC #666666 #666666 #CCCCCC; border-style: solid; padding: 2px; border-width: 2px; }
+.lBox                { border-right-width: 0px; }
+.mBox                { border-left-width: 0px; border-right-width: 0px; }
+.mtBox               { border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px; }
+.mbBox               { border-left-width: 0px; border-top-width: 0px; border-right-width: 0px; }
+.rBox                { border-left-width: 0px; }
+
+.Cell, .lCell, .rCell, .tCell, .bCell, .ltCell, .rtCell, .lbCell, .rbCell, .ltbCell, .rtbCell, .lrbCell, .lrtCell, .tbCell, .lrCell, .lrtbCell
+                     { background-color: #AAAAAA; padding: 2px; border-color: #CCCCCC #666666 #666666 #CCCCCC; border-style: solid; border-width: 0px; }
+.lCell, .ltCell, .lbCell, .ltbCell, .lrbCell, .lrtCell, .lrCell, .lrtbCell
+                     { border-left-width: 1px; }
+.rCell, .rtCell, .rbCell, .rtbCell, .lrbCell, .lrtCell, .lrCell, .lrtbCell
+                     { border-right-width: 1px; }
+.tCell, .ltCell, .rtCell, .ltbCell, .rtbCell, .lrtCell, .tbCell, .lrtbCell
+                     { border-top-width: 1px; }
+.bCell, .lbCell, .rbCell, .ltbCell, .rtbCell, .lrbCell, .tbCell, .lrtbCell
+                     { border-bottom-width: 1px; }
+
+table.resultLayout 
+{ 
+  border-spacing: 0px;
+  border-collapse: separate;
+  width: 94% 
+}
+
+table.resultLayout > tbody > tr
+{ 
+  background-color: #AAAAAA; 
+}
+table.resultLayout > tbody > tr:hover
+{ 
+  background-color: #CCCCCC; 
+}
+table.resultLayout > tbody > tr > td
+{ 
+  padding: 2px; 
+  border-color: #CCCCCC #666666 #666666 #CCCCCC; 
+  border-style: solid; 
+  border-width: 1px 0px; 
+  text-align: right;
+}
+table.resultLayout > tbody > tr > td:first-child 
+{ 
+  border-left-width: 1px; 
+}
+table.resultLayout > tbody > tr > td:last-child  
+{ 
+  border-right-width: 1px; 
+}
+table.resultLayout > tbody > tr > td:nth-child(2)
+{ 
+  text-align: left;
+}
+
+table.resultLayout > thead > tr > td
+{ 
+  font-weight: normal; 
+  background-color: #989889; 
+  border-color: #cccccc #666666 #666666 #cccccc; 
+  border-style: solid; 
+  border-width: 1px; 
+  padding-left: 3px; 
+  padding-right: 3px; 
+  padding-top: 3px 
+}
+table.resultLayout > tfoot > tr > td
+{ 
+  font-weight: normal; 
+  background-color: #989889; 
+  border-color: #cccccc #666666 #666666 #cccccc; 
+  border-style: solid; 
+  border-width: 1px; 
+  padding-left: 3px; 
+  padding-right: 3px; 
+  padding-top: 3px; 
+  text-align: right; 
+}
+
+
+.lrtbSepCell, .ltbSepCell, .rtbSepCell, .tbSepCell
+                     { background-color: #999999; border-color: #CCCCCC #666666 #666666 #CCCCCC; border-style: solid; padding: 2px; border-width: 1px; }
+.ltbSepCell          { border-right-width: 0px; }
+.rtbSepCell          { border-left-width: 0px; }
+.tbSepCell           { border-left-width: 0px; border-right-width: 0px; }
+
+.lrtbOkSepCell, .ltbOkSepCell, .rtbOkSepCell, .tbOkSepCell
+                     { background-color: #00C000; border-color: #CCCCCC #666666 #666666 #CCCCCC; border-style: solid; padding: 2px; border-width: 1px; }
+.ltbOkSepCell        { border-right-width: 0px; }
+.rtbOkSepCell        { border-left-width: 0px; }
+.tbOkSepCell         { border-left-width: 0px; border-right-width: 0px; }
+
+.lrtbHalfSepCell, .ltbHalfSepCell, .rtbHalfSepCell, .tbHalfSepCell
+                     { background-color: #80C000; border-color: #CCCCCC #666666 #666666 #CCCCCC; border-style: solid; padding: 2px; border-width: 1px; }
+.ltbHalfSepCell      { border-right-width: 0px; }
+.rtbHalfSepCell      { border-left-width: 0px; }
+.tbHalfSepCell       { border-left-width: 0px; border-right-width: 0px; }
+
+.lrtbWaitSepCell, .ltbWaitSepCell, .rtbWaitSepCell, .tbWaitSepCell
+                     { background-color: #C0C000; border-color: #CCCCCC #666666 #666666 #CCCCCC; border-style: solid; padding: 2px; border-width: 1px; }
+.ltbWaitSepCell      { border-right-width: 0px; }
+.rtbWaitSepCell      { border-left-width: 0px; }
+.tbWaitSepCell       { border-left-width: 0px; border-right-width: 0px; }
+
+.lrtbXSepCell, .ltbXSepCell, .rtbXSepCell, .tbXSepCell
+                     { background-color: #C00080; border-color: #CCCCCC #666666 #666666 #CCCCCC; border-style: solid; padding: 2px; border-width: 1px; }
+.ltbXSepCell         { border-right-width: 0px; }
+.rtbXSepCell         { border-left-width: 0px; }
+.tbXSepCell          { border-left-width: 0px; border-right-width: 0px; }
+
+.lrtbFailSepCell, .ltbFailSepCell, .rtbFailSepCell, .tbFailSepCell
+                     { background-color: #C04000; border-color: #CCCCCC #666666 #666666 #CCCCCC; border-style: solid; padding: 2px; border-width: 0px; }
+.ltbFailSepCell      { border-right-width: 0px; }
+.rtbFailSepCell      { border-left-width: 0px; }
+.tbFailSepCell       { border-left-width: 0px; border-right-width: 0px; }
+
+.lrtbEditSepCell, .ltbEditSepCell, .rtbEditSepCell, .tbEditSepCell
+                     { background-color: #0099cc; border-color: #CCCCCC #666666 #666666 #CCCCCC; border-style: solid; padding: 2px; border-width: 1px; }
+.ltbEditSepCell      { border-right-width: 0px; }
+.rtbEditSepCell      { border-left-width: 0px; }
+.tbEditSepCell       { border-left-width: 0px; border-right-width: 0px; }
+
+
+input.std, input.stdDis, input.test, input.testDis, input.flt, input.fltDis, input.seek, input.seekDis, input.err
+                     { color: #FFFFFF; font-weight: bold; font-size: 12px; border-color: #6C6C61 #B2B2A7 #B2B2A7 #6C6C61; border-style: solid; border-width: 1px; }
+
+input.std, input.test
+                     { background-color: #0099CC; }
+input.err
+                     { background-color: #c00000; }
+
+
+
+input.stdDis, input.testDis
+                     { background-color: #989889; }
+
+select.std, select.stdDis, select.test, select.flt
+                     { font-family: Courier; font-size: 12px; }
+
+input.fltDis         { color: #ffFFFF; background-color: #989889; }
+input.flt            { color: #000000; background-color: #989889; }
+
+input.seekDis        { color: #ffFFFF; background-color: #989889; font-size: 10px; }
+input.seek           { color: #000000; background-color: #989889; font-size: 10px; }
+select.seek          { font-family: Courier; font-size: 10px }
+
+
+.textHi              { color: #800000; }
+.textStd             { color: #000000; }
+.textDis             { color: #808080; }
+
+.dupS                { color: #c000c0; }
+.dupA                { color: #c000c0; }
+.dupG                { color: #ffff00; }
+.dupC                { color: #c00000; }
+
+.grayBox, .greenBox, .redBox, .yellowBox, .legendBox
+                     { width: 8px; height: 8px; display: block; border-color: #666666 #FFFFFF #FFFFFF #666666; border-style: solid; border-width: 1px; }
+.grayBox             { background-color: #c0c0c0; }
+.greenBox            { background-color: #00ff00; }
+.redBox              { background-color: #ff0000; }
+.yellowBox           { background-color: #ffff00; }
+.legendBox           { margin: 3px; }
+
+.nOk:before { content: "\2718"; color: red; float: left; }
+.wOk:before { content: "\2718"; color: #ff00ff; float: left; }
+.yOk:before { content: "\2714\0fe0e"; color: green; float: left; } 
+/*.oOk:before { content: "\2714"; color: yellow; float: left; }*/
+.oOk:before { content: "?"; color: yellow; float: left; }
+.oOk div
+{
+  position: relative;
+  display: inline-block;  
+}
+.oOk div div
+{
+  visibility: hidden;
+  width: 250px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  right: 0%;
+  margin-right: 10px;
+
+  opacity: 0;
+  transition: opacity 0.3s;	
+}
+
+.oOk:hover div div
+{
+  visibility: visible;
+  opacity: 1;
+}
+.oOk:hover div div::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  margin-right: 10px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+
+
+
+.but1                { background-color: #000000; padding: 1px }
+.but2                { text-align: center; background-color: #CCCCCC; border-color: #FFFFFF #666666 #666666 #FFFFFF; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; padding-left: 5px; padding-right: 5px; display: block }
+.butJSDis            { text-decoration: none; color: #404040; font-weight: bold; display: block; width: 100% }
+
+a.butJS              { text-decoration: none; color: #0000ff; font-weight: bold; display: block; width: 100% }
+a.butJS:hover        { text-decoration: none; color: #000000; font-weight: bold; display: block; width: 100% }
+a.butJSDel           { text-decoration: none; color: #990099; font-weight: bold; display: block; width: 100% }
+a.butJSDel:hover     { text-decoration: none; color: #ffcc00; font-weight: bold; display: block; width: 100%; background-color: #990099 }
+
+a.butTest            { text-decoration: none; color: #0000ff; font-weight: bold; display: block; width: 100% }
+a.butTest:hover      { text-decoration: none; color: #000000; font-weight: bold; display: block; width: 100% }
+
+a.butLink            { text-decoration: none; color: #000000; font-weight: bold; display: block; width: 100% }
+a.butLink:hover      { text-decoration: none; color: #FFFFFF; font-weight: bold; display: block; width: 100% }
+a.butDel             { text-decoration: none; color: #FF0000; font-weight: bold; display: block; width: 100% }
+a.butDel:hover       { text-decoration: none; color: #ffcc00; font-weight: bold; display: block; width: 100%; background-color: #FF0000 }
+a.butWarn            { text-decoration: none; color: #ffff00; font-weight: bold; display: block; width: 100% }
+a.butWarn:hover      { text-decoration: none; color: #000000; font-weight: bold; display: block; width: 100%; background-color: #FFFF00 }
+
+
+a.butSortLo          { text-decoration: none; color: #000000; font-weight: bold }
+a.butSortLo:hover    { text-decoration: none; color: #FFFFFF; font-weight: bold }
+a.butSortHi          { text-decoration: none; color: #0000FF; font-weight: bold }
+a.butSortHi:hover    { text-decoration: none; color: #FFFFFF; font-weight: bold }
+
+
+
+
+
+
+.outButton           { background-color: #000000; padding: 1px }
+.updButton           { height: 16px; font-weight: bold; color: #000000; background-color: #CCCCCC; border-color: #FFFFFF #666666 #666666 #FFFFFF; border-style: solid; border-width: 1px; width: 120px }
+.disButton           { height: 16px; font-weight: normal; color: #808080; background-color: #CCCCCC; border-color: #FFFFFF #666666 #666666 #FFFFFF; border-style: solid; border-width: 1px; width: 120px }
+.delButton           { height: 16px; font-weight: bold; color: #ff0000; background-color: #CCCCCC; border-color: #FFFFFF #666666 #666666 #FFFFFF; border-style: solid; border-width: 1px; width: 120px }
+.insButton           { height: 16px; font-weight: bold; color: #000000; background-color: #CCCCCC; border-color: #FFFFFF #666666 #666666 #FFFFFF; border-style: solid; border-width: 1px; width: 120px }
+.fltButton           { height: 16px; font-weight: bold; color: #000000; background-color: #989889; border-color: #B2B2A7 #6C6C61 #6C6C61 #B2B2A7; border-style: solid; border-width: 1px; width: 120px }
+.seekButton          { height: 16px; font-weight: bold; color: #000000; background-color: #989889; border-color: #B2B2A7 #6C6C61 #6C6C61 #B2B2A7; border-style: solid; border-width: 1px; width: 80px }
+
+
+.flatButton          { background-color: #AAAAAA; border-color: #CCCCCC #666666 #666666 #CCCCCC; border-style: solid; border-width: 1px; text-align: center}
+.hdrUp               { height: 15px; background-color: #989889; border-color: #cccccc #666666 #666666 #cccccc; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; padding-left: 3px; padding-right: 3px; padding-top: 3px }
+.hdrDown             { height: 15px; background-color: #989889; border-color: #666666 #cccccc #cccccc #666666; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; padding-left: 3px; padding-right: 3px; padding-top: 3px }
+.hdrDis              { font-weight: normal; height: 15px; background-color: #989889; border-color: #cccccc #666666 #666666 #cccccc; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; padding-left: 3px; padding-right: 3px; padding-top: 3px }
+.hdrLink             { display: block; width: 100% }
+
+.hdrCell             { font-weight: normal; background-color: #989889; border-color: #cccccc #666666 #666666 #cccccc; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; padding-left: 3px; padding-right: 3px; padding-top: 3px }
+
+img.border           { border-color: #6C6C61 #B2B2A7 #B2B2A7 #6C6C61 ; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px }
+.visY                { visibility: visible }
+.visN                { visibility: hidden }
+
+table.header         { font-size: 16px; font-weight: bold; background-color: #0099CC; border-color: #007799 #00BBEE #00BBEE #007799; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+td.header            { font-size: 16px; font-weight: bold; padding: 2px }
+
+.pageCount           { color: #800000  }
+
+.textOk              { color: #009940; font-weight: bold; }
+.textWarn            { color: #DDDD00; font-weight: bold; }
+.textCrit            { color: #994040; font-weight: bold; }
+.textOther           { color: #808080; font-weight: bold; }
+
+</style>
+  <script data-savepage-src="/shared.js" language="JavaScript" data-savepage-type="text/javascript" type="text/plain"></script>
+  
+ 
+<style id="savepage-cssvariables">
+  :root {
+  }
+</style>
+<script id="savepage-shadowloader" type="text/javascript">
+  "use strict";
+  window.addEventListener("DOMContentLoaded",
+  function(event) {
+    savepage_ShadowLoader(5);
+  },false);
+  function savepage_ShadowLoader(c){createShadowDOMs(0,document.documentElement);function createShadowDOMs(a,b){var i;if(b.localName=="iframe"||b.localName=="frame"){if(a<c){try{if(b.contentDocument.documentElement!=null){createShadowDOMs(a+1,b.contentDocument.documentElement)}}catch(e){}}}else{if(b.children.length>=1&&b.children[0].localName=="template"&&b.children[0].hasAttribute("data-savepage-shadowroot")){b.attachShadow({mode:"open"}).appendChild(b.children[0].content);b.removeChild(b.children[0]);for(i=0;i<b.shadowRoot.children.length;i++)if(b.shadowRoot.children[i]!=null)createShadowDOMs(a,b.shadowRoot.children[i])}for(i=0;i<b.children.length;i++)if(b.children[i]!=null)createShadowDOMs(a,b.children[i])}}}
+</script>
+<meta name="savepage-url" content="https://progtest.fit.cvut.cz/index.php?X=Task&Cou=396&Tgr=2562&Tsk=1816">
+<meta name="savepage-title" content="aungthet@progtest.fit.cvut.cz - ProgTest">
+<meta name="savepage-pubdate" content="Unknown">
+<meta name="savepage-from" content="https://progtest.fit.cvut.cz/index.php?X=Task&Cou=396&Tgr=2562&Tsk=1816">
+<meta name="savepage-date" content="Fri Feb 09 2024 00:55:12 GMT+0100 (Central European Standard Time)">
+<meta name="savepage-state" content="Standard Items; Retain cross-origin frames; Merge CSS images; Remove unsaved URLs; Load lazy images in existing content; Max frame depth = 5; Max resource size = 50MB; Max resource time = 10s;">
+<meta name="savepage-version" content="33.9">
+<meta name="savepage-comments" content="">
+  </head>
+ <body bgcolor="#828273" text="#000000" cz-shortcut-listen="true">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+   <tbody><tr height="25">
+    <td align="left" bgcolor="#00ff00"><span class="navLink"><a class="navLink" data-savepage-href="?X=Main" href="https://progtest.fit.cvut.cz/index.php?X=Main">ProgTest</a>  ►  <a class="navLink" data-savepage-href="?X=Course&Cou=396" href="https://progtest.fit.cvut.cz/index.php?X=Course&Cou=396">BIE-PA1 (23/24 ZS)</a>  ►  <a class="navLink" data-savepage-href="?X=TaskGrp&Cou=396&Tgr=2562" href="https://progtest.fit.cvut.cz/index.php?X=TaskGrp&Cou=396&Tgr=2562">Homework 05</a>  ►  <b>Review #2</b></span></td>
+    <td align="right" bgcolor="#00ff00"><a class="navLink" data-savepage-href="?X=Logout" href="https://progtest.fit.cvut.cz/index.php?X=Logout">Logout</a></td>
+   </tr>
+  </tbody></table>
+<br>
+
+
+
+
+ <br>
+ <br>
+   <center>
+   <div class="topLayout">
+    <div class="outBox">
+     <table class="header" width="100%" cellpadding="0" cellspacing="0">
+      <tbody><tr>
+       <td class="header"><b>Review #2</b></td>
+      </tr>
+     </tbody></table>
+    </div>
+   </div>
+  </center>
+ <form name="form1" method="post" action="?X=TaskU&Cou=396&Tgr=2562&Tsk=1816" enctype="multipart/form-data">
+  <center>
+    <div class="topLayout">
+     <div class="outBox">
+      <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+       <colgroup><col width="200">
+       <col>
+       <col width="130">
+       </colgroup><tbody><tr>
+        <td class="ltCell" align="left"><b>Submission deadline:</b></td>
+        <td class="tCell" align="left"><b>2023-12-04 11:59:59</b></td>
+        <td class="rtCell" align="right" id="countdown"> </td>
+       </tr>
+
+       <tr>
+        <td class="lCell" align="left"><b>Late submission with malus:</b></td>
+        <td class="rCell" align="left" colspan="2"><b>2023-12-31 23:59:59</b> (Late submission malus: 100.0000 %)</td>
+       </tr>
+
+       <tr>
+        <td class="lCell" align="left"><b>Evaluation:</b></td>
+        <td class="rCell" colspan="2" align="left"><b>5.0000</b></td>
+       </tr>
+       <tr>
+        <td class="lCell" align="left"><b>Max. assessment:</b></td>
+        <td class="rCell" colspan="2" align="left"><b>5.0000</b> (Without bonus points)</td>
+       </tr>
+       <tr>
+        <td class="lCell" align="left"><b>Submissions:</b></td>
+        <td class="rCell" colspan="2" align="left">11 /  20 Free retries + 10 Penalized retries (-10 % penalty each retry)</td>
+       </tr>
+       <tr>
+        <td class="lbCell" align="left"><b>Advices:</b></td>
+        <td class="rbCell" colspan="2" align="left">2 / 2 Advices for free + 2 Advices with a penalty (-10 % penalty each advice)</td>
+       </tr>
+       <tr>
+
+        <td class="lrtbCell" colspan="3" align="left"><p>The task is to develop a program to analyze statistical data with e-shop reviews.</p>
+
+
+<p>We assume our e-shop collects user reviews. The reviews arrive continuously, there is
+a date, a rating (a positive integer), and a review text associated with each review.
+The reviews are entered such that the dates form a non-decreasing sequence. However, there
+may exist two or more reviews entered in the same day. An example input review:</p>
+
+<pre>+ 2023-11-10 10 Short_review
+</pre>
+<p>The date is <tt>Nov 10, 2023</tt>, the rating is <tt>10</tt>, and the comment is <tt>Short_review</tt>
+(there are no whitespace characters in the comment, the comment is at most 4096 characters long).
+Since the dates must form a non-decreasing sequence, the next review must be dated <tt>Nov 10, 2023</tt>
+or later (but not earlier).</p>
+
+<p>Our statistics is interested in non-empty time intervals such that the average rating and median rating
+is as different as possible. For instance, input:</p>
+
+<pre>? 100
+</pre>
+
+<p>tries to find an interval such that the interval contains at least 100 reviews and the difference between
+median rating and average rating in the interval is the highest possible. In general, there may exist many such
+intervals with the same difference between the average and median. In these cases, we will choose the interval
+later end date (see the second example run, second query). If there exist more intervals with the same
+difference between the average and median and the same end date, we choose the interval with more reviews (see the
+second example run, third query).</p>
+
+<p>The search for the interval works with one day granularity. It means, it must include all reviews from all days
+of the interval, including all reviews from the starting/ending date. This is demonstrated in the first example
+run, first query. The result is 1 day long interval (Nov 16, median 42, average 70) even though an interval formed
+by the first two reviews gives a greater difference (median 10, average 41.5, but it omits one review from Nov 10).</p>
+
+<p>There are new reviews and search requests interleaved in the input. The search requests are served immediately,
+i.e., the search only includes the reviews entered so far (see the first example run).</p>
+
+<p>The output of the program is the date interval. The program displays the starting/ending day, the average rating,
+the medium rating, and (optionally) the list of reviews that fit into the interval. The reviews are listed in the order
+they were entered in the input.</p>
+
+<p>There are two variants of the search command. Search type <tt>? 100</tt> works as described in the previous paragraph.
+Search type <tt># 100</tt> works the same way, however, it does not list the reviews.</p>
+
+
+<p>The program must validate input data. If the input is invalid,
+the program must detect it, it shall output an error message (see below) and terminate.
+If displayed, the error message must be displayed on the standard output
+(do not send it to the error output) and the error message must be
+terminated by a newline (\n). The input is considered invalid, if:</p>
+
+<ul>
+ <li>invalid format of a review or a search command,</li>
+ <li>invalid date in a review,</li>
+ <li>a date in a review is before the date in the previous review,</li>
+ <li>non-numeric, zero, or negative rating in a review (rating must be at least 1),</li>
+ <li>non-numeric, zero, or negative value in a search command,</li>
+ <li>a search command without preceding reviews (at least one review must be entered before
+   the search command).</li>
+</ul>
+
+<p>Your program will be tested in a restricted environment. The testing environment limits
+running time and available memory. The length of the text in a review is at most 4096 characters,
+there is not any explicit limit on the number of reviews. You will need a dynamic memory allocation
+to store the reviews.</p>
+
+<b>Example program runs:</b><br>
+<hr>
+
+<pre><b>Reviews:</b>
++ 2023-11-10 10 Short_review
++ 2023-11-10 73 Long_review
++ 2023-11-10 15 Negative_review
++ 2023-11-11 45 Some_text
++ 2023-11-16 42 Useless_comment
++ 2023-11-16 98 Fake_review
+? 1
+<b>2023-11-16 - 2023-11-16: 70.000000 42</b>
+<b>  42: Useless_comment</b>
+<b>  98: Fake_review</b>
+? 2
+<b>2023-11-16 - 2023-11-16: 70.000000 42</b>
+<b>  42: Useless_comment</b>
+<b>  98: Fake_review</b>
+? 6
+<b>2023-11-10 - 2023-11-16: 47.166667 42</b>
+<b>  10: Short_review</b>
+<b>  73: Long_review</b>
+<b>  15: Negative_review</b>
+<b>  45: Some_text</b>
+<b>  42: Useless_comment</b>
+<b>  98: Fake_review</b>
+? 20
+<b>No interval.</b>
+# 1
+<b>2023-11-16 - 2023-11-16: 70.000000 42</b>
+# 2
+<b>2023-11-16 - 2023-11-16: 70.000000 42</b>
++ 2023-11-16 15 Updated_review
++ 2023-11-17 120 Sponsored
+# 6
+<b>2023-11-10 - 2023-11-17: 52.250000 42</b>
++ 2023-11-17 1 Not_sponsored
+# 6
+<b>2023-11-11 - 2023-11-17: 53.500000 42</b>
++ 2023-11-17 1 Not_sponsored
+# 6
+<b>2023-11-16 - 2023-11-17: 46.166667 15</b>
++ 2023-11-17 1 Not_sponsored
+# 6
+<b>2023-11-11 - 2023-11-17: 40.375000 15</b>
++ 2023-11-17 1800 Sponsored
+# 6
+<b>2023-11-16 - 2023-11-17: 259.750000 15</b>
++ 2023-11-17 1800 Sponsored
+# 6
+<b>2023-11-17 - 2023-11-17: 620.500000 1</b>
++ 2023-11-17 1800 Sponsored
+# 6
+<b>2023-11-17 - 2023-11-17: 789.000000 120</b>
++ 2023-11-17 1801 Sponsored
+# 6
+<b>2023-11-17 - 2023-11-17: 915.500000 120</b>
++ 2023-11-17 1802 Sponsored
+# 6
+<b>2023-11-17 - 2023-11-17: 1014.000000 1800</b>
++ 2023-11-17 1803 Sponsored
+# 6
+<b>2023-11-16 - 2023-11-17: 852.615385 120</b>
++ 2023-11-17 1804 Sponsored
+# 6
+<b>2023-11-16 - 2023-11-17: 920.571429 120</b>
++ 2023-11-17 1805 Sponsored
+# 6
+<b>2023-11-16 - 2023-11-17: 979.533333 1800</b>
++ 2023-11-17 1806 Sponsored
+# 6
+<b>2023-11-11 - 2023-11-17: 973.176471 1800</b>
++ 2023-11-17 180000 Bribed
+# 6
+<b>2023-11-17 - 2023-11-17: 14024.571429 1800</b>
++ 2023-11-17 180000000 Hacked
+# 6
+<b>2023-11-17 - 2023-11-17: 12013089.600000 1801</b>
+</pre>
+<hr>
+<pre><b>Reviews:</b>
++ 2023-11-10 10 Short_review
++ 2023-11-11 20 Short_review
+# 1
+<b>2023-11-10 - 2023-11-11: 15.000000 10</b>
++ 2023-11-12 15 Short_review
++ 2023-11-13 10 Short_review
++ 2023-11-13 20 Short_review
+# 1
+<b>2023-11-13 - 2023-11-13: 15.000000 10</b>
++ 2023-11-14 10 Short_review
++ 2023-11-14 20 Short_review
+# 1
+<b>2023-11-13 - 2023-11-14: 15.000000 10</b>
+# 5
+<b>2023-11-11 - 2023-11-14: 15.833333 15</b>
++ 2023-11-15 15 Short_review
++ 2023-11-16 10 Short_review
++ 2023-11-16 20 Short_review
+# 1
+<b>2023-11-16 - 2023-11-16: 15.000000 10</b>
+# 5
+<b>2023-11-11 - 2023-11-14: 15.833333 15</b>
+</pre>
+<hr>
+<pre><b>Reviews:</b>
++ 2023-11-10 10 A_review_with_long_text
+? 1
+<b>2023-11-10 - 2023-11-10: 10.000000 10</b>
+<b>  10: A_review_with_long_text</b>
++ 2023-11-09 10 A_review_with_short_text
+<b>Invalid input.</b>
+</pre>
+<hr>
+<pre><b>Reviews:</b>
++ 2000-02-29 10 Review_#1
++ 2004-02-29 10 Review_#2
++ 2020-02-29 10 Review_#3
+? 1
+<b>2000-02-29 - 2020-02-29: 10.000000 10</b>
+<b>  10: Review_#1</b>
+<b>  10: Review_#2</b>
+<b>  10: Review_#3</b>
++ 2023-02-28 10 Review_#4
+? 1
+<b>2000-02-29 - 2023-02-28: 10.000000 10</b>
+<b>  10: Review_#1</b>
+<b>  10: Review_#2</b>
+<b>  10: Review_#3</b>
+<b>  10: Review_#4</b>
++ 2023-02-29 10 Review
+<b>Invalid input.</b>
+</pre>
+<hr>
+<pre><b>Reviews:</b>
++ 2100-02-29 10 Review_#1
+<b>Invalid input.</b>
+</pre>
+<hr>
+<pre><b>Reviews:</b>
++ 2000-02-29 0 Review_#1
+<b>Invalid input.</b>
+</pre>
+
+<hr>
+
+<b>Advice:</b><br>
+<ul>
+ <li>The example runs above list both the output of your program (boldface font)
+     and user input (regular font). The bold/regular formatting is included here, in
+     the problem statement page, to increase readability of the listing. Your
+     program must output the text without any additional markup.</li>
+
+ <li>Do not forget the newline (\n) after the last output line.</li>
+
+ <li>Use Gregorian calendar rules when validating dates. The tests use reasonable range of years (1800 - 3000).</li>
+
+ <li>The median is positively defined if the number of reviews is odd. When analyzing even number of reviews,
+   use the smaller of the "middle" values. That is, ratings <tt>6 15 7</tt> result in median value 7.
+   By the above definition, ratings <tt>6 15 7 3</tt> result in median value 6.</li>
+
+ <li>The resulting interval must contain at least one review (median / average is not defined zero reviews).</li>
+
+ <li>There must exist some review in both starting and ending days of the resulting interval.</li>
+
+ <li>There are two speed tests included in this task. The extra points will be awarded for programs that
+     are able to quickly process inputs with many reviews. The searches in the speed tests are mostly
+     of type <tt>#</tt> (it takes long time to display the review text).</li>
+
+ <li>A solution of this assignment may be used for code review. However,
+     the program must pass all mandatory tests and all optional tests with 100% results to be
+     eligible for code review (the program does not have to pass bonus tests).</li>
+</ul>
+
+</td> 
+
+       </tr>
+
+
+       <tr>
+        <td class="ltbCell" colspan="2" align="left"><b>Sample data:</b></td>
+        <td class="rtbCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" data-savepage-href="?X=TaskS&Cou=396&Tgr=2562&Tsk=1816" href="https://progtest.fit.cvut.cz/index.php?X=TaskS&Cou=396&Tgr=2562&Tsk=1816">Download</a></div></div></td>
+       </tr>
+
+
+
+
+
+
+
+
+
+      </tbody></table>
+     </div>
+    </div>
+
+
+ <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="reftable">
+   <tbody><tr>
+    <td class="ltbSepCell" align="left"><input type="checkbox" name="SHOW_REF" onchange="showRefSolution()"> <b>Reference</b></td>
+    <td class="rtbSepCell" align="right"> </td>
+   </tr>
+   <tr style="display: none;">
+    <td class="lrtbCell" align="left" colspan="2"><ul><li><b>Evaluator: computer</b><ul><li>Program compiled</li><li>Test 'Základní test se vstupy z ukázky': success<ul><li>result: 100.00 %, required: 100.00 %</li><li>Max. run time: 0.006 s (limit: 1.000 s)</li><li>Total run time: 0.034 s</li><li>Peak mem usage: 2612 KiB (limit: 3059 KiB)</li><li>Mandatory test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Test mezních hodnot': success<ul><li>result: 100.00 %, required: 100.00 %</li><li>Max. run time: 0.072 s (limit: 2.000 s)</li><li>Total run time: 0.518 s</li><li>Mandatory test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Test ošetření nesprávných vstupů': success<ul><li>result: 100.00 %, required: 50.00 %</li><li>Max. run time: 0.006 s (limit: 1.000 s)</li><li>Total run time: 0.144 s</li><li>Optional test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Test náhodnými daty': success<ul><li>result: 100.00 %, required: 50.00 %</li><li>Max. run time: 0.067 s (limit: 4.000 s)</li><li>Total run time: 0.761 s</li><li>Optional test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Test náhodnými daty + mem debugger': success<ul><li>result: 100.00 %, required: 50.00 %</li><li>Max. run time: 0.061 s (limit: 4.000 s)</li><li>Total run time: 0.469 s</li><li>Optional test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Test rychlosti #1': success<ul><li>result: 100.00 %, required: 100.00 %</li><li>Max. run time: 0.289 s (limit: 7.000 s)</li><li>Total run time: 0.347 s</li><li>Bonus test - success, evaluation: 110.00 %</li></ul></li>
+<li>Test 'Test rychlosti #2': success<ul><li>result: 100.00 %, required: 100.00 %</li><li>Max. run time: 2.430 s (limit: 5.000 s)</li><li>Total run time: 3.147 s</li><li>Bonus test - success, evaluation: 130.00 %</li></ul></li>
+<li>Overall ratio: 143.00 % (= 1.00 * 1.00 * 1.00 * 1.00 * 1.00 * 1.10 * 1.30)</li></ul></li><li>Total percent: 143.00 %</li><li>Early submission bonus: 0.50</li><li>Total points: 1.43 * ( 5.00 + 0.50 ) = 7.87</li></ul></td>
+   </tr>
+    <tr style="display: none;">
+  <td class="ltbCell" align="left"><b>SW metrics:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td> </td>
+     <td class="ac">Total</td>
+     <td class="ac">Average</td>
+     <td class="ac">Maximum</td>
+     <td>Function name</td>
+    </tr>
+    <tr>
+     <td>Functions:</td>
+     <td class="ar"><b>15</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Lines of code:</td>
+     <td class="ar"><b>286</b></td>
+     <td class="ar"><span class="textOk">19.07 ± 13.89</span></td>
+     <td class="ar"><span class="textWarn">57</span></td>
+     <td><tt>queryReview</tt></td>
+    </tr>
+    <tr>
+     <td>Cyclomatic complexity:</td>
+     <td class="ar"><b>72</b></td>
+     <td class="ar"><span class="textOk">4.80 ± 4.05</span></td>
+     <td class="ar"><span class="textOk">17</span></td>
+     <td><tt>queryReview</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>
+   </tbody></table>
+  </div>
+ </div>
+
+
+
+
+ <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbOkSepCell" align="left"><b>11</b></td>
+    <td class="tbOkSepCell" align="left"><b>2023-12-04 11:53:48</b></td>
+    <td class="rtbOkSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" data-savepage-href="?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595486" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595486">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Submission status:</b></td>
+    <td class="tCell" align="left">Evaluated</td>
+
+
+
+    <td class="rtbCell" rowspan="2"> </td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Evaluation:</b></td>
+    <td class="bCell" align="left">5.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Evaluator: computer</b><ul><li>Program compiled</li><li>Test 'Basic test with example input data': success<ul><li>result: 100.00 %, required: 100.00 %</li><li>Max. run time: 0.006 s (limit: 1.000 s)</li><li>Total run time: 0.034 s</li><li>Peak mem usage: 2628 KiB (limit: 4036 KiB)</li><li>Mandatory test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Borderline test': success<ul><li>result: 100.00 %, required: 100.00 %</li><li>Max. run time: 1.958 s (limit: 2.000 s)</li><li>Total run time: 5.601 s</li><li>Mandatory test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Invalid input test': success<ul><li>result: 100.00 %, required: 50.00 %</li><li>Max. run time: 0.006 s (limit: 1.000 s)</li><li>Total run time: 0.121 s</li><li>Optional test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Random test': success<ul><li>result: 100.00 %, required: 50.00 %</li><li>Max. run time: 1.554 s (limit: 4.000 s)</li><li>Total run time: 13.201 s</li><li>Optional test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Random test + mem debugger': success<ul><li>result: 100.00 %, required: 50.00 %</li><li>Max. run time: 0.321 s (limit: 4.000 s)</li><li>Total run time: 1.746 s</li><li>Optional test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Speed test #1': Abnormal program termination  (Time limit exceeded)<ul><li>Program was killed after: 7.004 s (limit: 7.000 s)</li><li>Bonus test - failed, evaluation: No bonus awarded</li><li>Time limit exceeded <a data-savepage-href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5564196')" href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5564196%27)">[Unlock advice (2.00 KiB, incomplete data)]</a></li></ul></li>
+<li>Test 'Speed test #2': Not tested<ul><li>Bonus test - failed, evaluation: No bonus awarded</li></ul></li>
+<li>Overall ratio: 100.00 % (= 1.00 * 1.00 * 1.00 * 1.00 * 1.00)</li></ul></li><li>Advices used: 2</li><li>Penalty due to advices: None (2 &lt;= 2 limit)</li><li>Total percent: 100.00 %</li><li>Total points: 1.00 * 5.00 = 5.00</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metrics:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td> </td>
+     <td class="ac">Total</td>
+     <td class="ac">Average</td>
+     <td class="ac">Maximum</td>
+     <td>Function name</td>
+    </tr>
+    <tr>
+     <td>Functions:</td>
+     <td class="ar"><b>9</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Lines of code:</td>
+     <td class="ar"><b>222</b></td>
+     <td class="ar"><span class="textOk">24.67 ± 23.52</span></td>
+     <td class="ar"><span class="textWarn">83</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+    <tr>
+     <td>Cyclomatic complexity:</td>
+     <td class="ar"><b>67</b></td>
+     <td class="ar"><span class="textOk">7.44 ± 5.17</span></td>
+     <td class="ar"><span class="textOk">16</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>10</b></td>
+    <td class="tbFailSepCell" align="left"><b>2023-12-04 11:44:44</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" data-savepage-href="?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595433" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595433">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Submission status:</b></td>
+    <td class="tCell" align="left">Evaluated</td>
+
+
+
+    <td class="rtbCell" rowspan="2"> </td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Evaluation:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Evaluator: computer</b><ul><li>Program compiled</li><li>Test 'Basic test with example input data': success<ul><li>result: 100.00 %, required: 100.00 %</li><li>Max. run time: 0.006 s (limit: 1.000 s)</li><li>Total run time: 0.030 s</li><li>Peak mem usage: 2628 KiB (limit: 4036 KiB)</li><li>Mandatory test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Borderline test': Abnormal program termination (Segmentation fault/Bus error/Memory limit exceeded/Stack limit exceeded)<ul><li>Max. run time: 0.022 s (limit: 2.000 s)</li><li>Total run time: 0.022 s</li><li>Mandatory test failed, evaluation: 0.00 %</li><li>Seggmentation fault <a data-savepage-href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5564034')" href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5564034%27)">[Unlock advice (2.00 KiB, incomplete data)]</a></li></ul></li>
+<li>Overall ratio: 0.00 % (= 1.00 * 0.00)</li></ul></li><li>Advices used: 2</li><li>Penalty due to advices: None (2 &lt;= 2 limit)</li><li>Total percent: 0.00 %</li><li>Total points: 0.00 * 5.00 = 0.00</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metrics:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td> </td>
+     <td class="ac">Total</td>
+     <td class="ac">Average</td>
+     <td class="ac">Maximum</td>
+     <td>Function name</td>
+    </tr>
+    <tr>
+     <td>Functions:</td>
+     <td class="ar"><b>9</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Lines of code:</td>
+     <td class="ar"><b>222</b></td>
+     <td class="ar"><span class="textOk">24.67 ± 23.52</span></td>
+     <td class="ar"><span class="textWarn">83</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+    <tr>
+     <td>Cyclomatic complexity:</td>
+     <td class="ar"><b>63</b></td>
+     <td class="ar"><span class="textOk">7.00 ± 4.74</span></td>
+     <td class="ar"><span class="textOk">16</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>9</b></td>
+    <td class="tbFailSepCell" align="left"><b>2023-12-04 11:39:44</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" data-savepage-href="?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595417" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595417">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Submission status:</b></td>
+    <td class="tCell" align="left">Evaluated</td>
+
+
+
+    <td class="rtbCell" rowspan="2"> </td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Evaluation:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Evaluator: computer</b><ul><li>Program compiled</li><li>Test 'Basic test with example input data': success<ul><li>result: 100.00 %, required: 100.00 %</li><li>Max. run time: 0.007 s (limit: 1.000 s)</li><li>Total run time: 0.033 s</li><li>Peak mem usage: 2628 KiB (limit: 4036 KiB)</li><li>Mandatory test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Borderline test': Abnormal program termination  (Time limit exceeded)<ul><li>Program was killed after: 2.005 s (limit: 2.000 s)</li><li>Mandatory test failed, evaluation: 0.00 %</li><li>Time limit exceeded <a data-savepage-href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5563959')" href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5563959%27)">[Unlock advice (2.00 KiB, incomplete data)]</a></li></ul></li>
+<li>Overall ratio: 0.00 % (= 1.00 * 0.00)</li></ul></li><li>Advices used: 2</li><li>Penalty due to advices: None (2 &lt;= 2 limit)</li><li>Total percent: 0.00 %</li><li>Total points: 0.00 * 5.00 = 0.00</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metrics:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td> </td>
+     <td class="ac">Total</td>
+     <td class="ac">Average</td>
+     <td class="ac">Maximum</td>
+     <td>Function name</td>
+    </tr>
+    <tr>
+     <td>Functions:</td>
+     <td class="ar"><b>9</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Lines of code:</td>
+     <td class="ar"><b>222</b></td>
+     <td class="ar"><span class="textOk">24.67 ± 23.52</span></td>
+     <td class="ar"><span class="textWarn">83</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+    <tr>
+     <td>Cyclomatic complexity:</td>
+     <td class="ar"><b>63</b></td>
+     <td class="ar"><span class="textOk">7.00 ± 4.74</span></td>
+     <td class="ar"><span class="textOk">16</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>8</b></td>
+    <td class="tbFailSepCell" align="left"><b>2023-12-04 11:39:18</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" data-savepage-href="?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595415" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595415">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Submission status:</b></td>
+    <td class="tCell" align="left">Evaluated</td>
+
+
+
+    <td class="rtbCell" rowspan="2"> </td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Evaluation:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Evaluator: computer</b><ul><li>Program compiled</li><li>Test 'Basic test with example input data': success<ul><li>result: 100.00 %, required: 100.00 %</li><li>Max. run time: 0.006 s (limit: 1.000 s)</li><li>Total run time: 0.034 s</li><li>Peak mem usage: 2628 KiB (limit: 4036 KiB)</li><li>Mandatory test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Borderline test': Abnormal program termination  (Time limit exceeded)<ul><li>Program was killed after: 2.006 s (limit: 2.000 s)</li><li>Mandatory test failed, evaluation: 0.00 %</li><li>Time limit exceeded <a data-savepage-href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5563957')" href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5563957%27)">[Unlock advice (2.00 KiB, incomplete data)]</a></li></ul></li>
+<li>Overall ratio: 0.00 % (= 1.00 * 0.00)</li></ul></li><li>Advices used: 2</li><li>Penalty due to advices: None (2 &lt;= 2 limit)</li><li>Total percent: 0.00 %</li><li>Total points: 0.00 * 5.00 = 0.00</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metrics:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td> </td>
+     <td class="ac">Total</td>
+     <td class="ac">Average</td>
+     <td class="ac">Maximum</td>
+     <td>Function name</td>
+    </tr>
+    <tr>
+     <td>Functions:</td>
+     <td class="ar"><b>9</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Lines of code:</td>
+     <td class="ar"><b>222</b></td>
+     <td class="ar"><span class="textOk">24.67 ± 23.52</span></td>
+     <td class="ar"><span class="textWarn">83</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+    <tr>
+     <td>Cyclomatic complexity:</td>
+     <td class="ar"><b>63</b></td>
+     <td class="ar"><span class="textOk">7.00 ± 4.74</span></td>
+     <td class="ar"><span class="textOk">16</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>7</b></td>
+    <td class="tbFailSepCell" align="left"><b>2023-12-04 11:37:57</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" data-savepage-href="?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595410" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595410">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Submission status:</b></td>
+    <td class="tCell" align="left">Evaluated</td>
+
+
+
+    <td class="rtbCell" rowspan="2"> </td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Evaluation:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Evaluator: computer</b><ul><li>Program compiled</li><li>Test 'Basic test with example input data': success<ul><li>result: 100.00 %, required: 100.00 %</li><li>Max. run time: 0.007 s (limit: 1.000 s)</li><li>Total run time: 0.035 s</li><li>Peak mem usage: 2696 KiB (limit: 4036 KiB)</li><li>Mandatory test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Borderline test': Abnormal program termination  (Time limit exceeded)<ul><li>Program was killed after: 2.006 s (limit: 2.000 s)</li><li>Mandatory test failed, evaluation: 0.00 %</li><li>Time limit exceeded <a data-savepage-href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5563945')" href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5563945%27)">[Unlock advice (2.00 KiB, incomplete data)]</a></li></ul></li>
+<li>Overall ratio: 0.00 % (= 1.00 * 0.00)</li></ul></li><li>Advices used: 2</li><li>Penalty due to advices: None (2 &lt;= 2 limit)</li><li>Total percent: 0.00 %</li><li>Total points: 0.00 * 5.00 = 0.00</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metrics:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td> </td>
+     <td class="ac">Total</td>
+     <td class="ac">Average</td>
+     <td class="ac">Maximum</td>
+     <td>Function name</td>
+    </tr>
+    <tr>
+     <td>Functions:</td>
+     <td class="ar"><b>9</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Lines of code:</td>
+     <td class="ar"><b>222</b></td>
+     <td class="ar"><span class="textOk">24.67 ± 23.52</span></td>
+     <td class="ar"><span class="textWarn">83</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+    <tr>
+     <td>Cyclomatic complexity:</td>
+     <td class="ar"><b>63</b></td>
+     <td class="ar"><span class="textOk">7.00 ± 4.74</span></td>
+     <td class="ar"><span class="textOk">16</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbHalfSepCell" align="left"><b>6</b></td>
+    <td class="tbHalfSepCell" align="left"><b>2023-12-04 11:36:08</b></td>
+    <td class="rtbHalfSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" data-savepage-href="?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595401" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595401">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Submission status:</b></td>
+    <td class="tCell" align="left">Evaluated</td>
+
+
+
+    <td class="rtbCell" rowspan="2"> </td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Evaluation:</b></td>
+    <td class="bCell" align="left">2.5000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Evaluator: computer</b><ul><li>Program compiled</li><li>Test 'Basic test with example input data': success<ul><li>result: 100.00 %, required: 100.00 %</li><li>Max. run time: 0.007 s (limit: 1.000 s)</li><li>Total run time: 0.035 s</li><li>Peak mem usage: 2628 KiB (limit: 4036 KiB)</li><li>Mandatory test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Borderline test': success<ul><li>result: 100.00 %, required: 100.00 %</li><li>Max. run time: 1.996 s (limit: 2.000 s)</li><li>Total run time: 5.783 s</li><li>Mandatory test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Invalid input test': success<ul><li>result: 100.00 %, required: 50.00 %</li><li>Max. run time: 0.005 s (limit: 1.000 s)</li><li>Total run time: 0.112 s</li><li>Optional test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Random test': success<ul><li>result: 100.00 %, required: 50.00 %</li><li>Max. run time: 1.758 s (limit: 4.000 s)</li><li>Total run time: 13.136 s</li><li>Optional test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Random test + mem debugger': Abnormal program termination (Segmentation fault/Bus error/Memory limit exceeded/Stack limit exceeded)<ul><li>Max. run time: 0.043 s (limit: 4.000 s)</li><li>Total run time: 0.043 s</li><li>Optional test failed, evaluation: 50.00 %</li><li><input type="checkbox" name="cb_T5563924" onchange="CBpressed( 'T5563924' )"> Seggmentation fault<div id="pre_T5563924" style="display: none; padding-left: 20px;"><input type="checkbox" name="cb_I5563924" onchange="CBpressed( 'I5563924' )"> Input data <a data-savepage-href="?X=Advice&UID=I5563924" href="https://progtest.fit.cvut.cz/index.php?X=Advice&UID=I5563924">[2048 B / 6845 B]</a><br><pre id="pre_I5563924" style="display: none">+ 2020-01-01 22671305 vtdiljhocgnmoxwtrynxhpxudjamnyzicdpjcvodksxrc
++ 2020-01-01 26461931 gjvylidlfupvfevaidurfonqhwrgdopbxbelmrzsyrgqgli
++ 2020-01-02 7227902 vmcbcnjersceyjswwqoluxabmvekkyfxgorcskboepnyup
++ 2020-01-03 79868452 wkyuwlxbkcvlckezxcerfutqjklpkcqtwwyxjkiuo
++ 2020-01-03 58703604 frnpwulhkujejeflybyizbcjfjmirdnzzuqbuwppsqpigtws
++ 2020-01-04 84848634 bpmsjoxkjnejfizfpsymltnshuovqnupqbhrlgvwwgyt
++ 2020-01-04 16670697 ccncouhabrusskocfqaqzyzmdqadcmtzytynsanpsrkumd
++ 2020-01-04 88561904 sldgctxhyuaiisrcyxfulrbyrzcotzpkmlmegydfqgltrxwir
++ 2020-01-04 36399584 xuegnvneinnimperzuzobtszsnxfdytptymasqrwmhyzi
++ 2020-01-04 23317898 xlgkpgemabijrxwgnpixvbpojuezymiznonhaqjprysgehxw
++ 2020-01-04 229887 wrpchpcfnuamgzjapnmfwbtvmodwcoifskyhurjp
++ 2020-01-04 31734053 sgsdglhrpfixokxxfwbsjrumappwobiutmwgyrdjbeygevqx
++ 2020-01-04 29853244 kpecaheqdjfphyqswivkoysezhogpnstuhsjjqmr
++ 2020-01-05 27825143 heitawxzzhixanidfgusqxnwejqlkgkpyypaflvgvi
++ 2020-01-06 30056183 toiflnmyuyrvbfailepadlwjhgraqzsvamfxkgzduk
++ 2020-01-0
+
+&lt;skipping 4797 B&gt;
+
+ pyedweogcgxalplwsmsbfrqdickctulfmpkdrahe
++ 2020-02-04 3117443 gwesqplbnelhuvartzlcjhpobvqyqcsaqxwxemkqscudtmgjy
++ 2020-02-04 79806671 uxfkbxtndyivceyoqjyhkeqccabgfomijpcexotbtvomsht
++ 2020-02-04 20039975 twhwicfcxzjijnnhsuhngmfgsvfbkcwuvislnzkcotmjsdcws
++ 2020-02-04 15613857 rctlszpfiigtrgllsxhgwpzjubfztzuxunjfzjetcswzty
++ 2020-02-05 70898789 drvjulcnfuhwhhlbtqqpiatexgerhwxvevaikppsznrvzp
++ 2020-02-05 83870995 fjymmsqpjddfhcsvbdxmuhhijneyeatatttxzsbkmudwyr
++ 2020-02-05 90450115 nrbpnzgzklvtwoboqvwpsequpagbddjboeuhmgfllsub
++ 2020-02-06 47824922 sycagsevocfspmjylvvqbhquqeqawuvhsabalkcekdbb
++ 2020-02-07 23868316 dkwyahmabngrfkgcpuqyzueftogzzeglucjhynqqpq
++ 2020-02-07 63712603 mllsrudxzzwktkptmehznzirlryxgyyvdhrlbicgpnlypi
++ 2020-02-08 87222485 jemckfrtyfrprqemsnhnxwmhbnpcvjysyesafontz
++ 2020-02-09 37798574 qkjlygodmbrvvyrjtyseauzhwxkzpaogofzqjdwl
++ 2020-02-09 91845815 qyxyijahnyxesqxusvqscraneupifyqdztfwdvgiobrkrlghf
+# 6
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+# 11
+# 12
+# 13
+# 14
+# 15
+# 16
+# 17
+# 18
+# 19
+# 20
+</pre></div></li></ul></li>
+<li>Test 'Speed test #1': Not tested<ul><li>Bonus test - failed, evaluation: No bonus awarded</li></ul></li>
+<li>Test 'Speed test #2': Not tested<ul><li>Bonus test - failed, evaluation: No bonus awarded</li></ul></li>
+<li>Overall ratio: 50.00 % (= 1.00 * 1.00 * 1.00 * 1.00 * 0.50)</li></ul></li><li>Advices used: 1</li><li>Penalty due to advices: None (1 &lt;= 2 limit)</li><li>Total percent: 50.00 %</li><li>Total points: 0.50 * 5.00 = 2.50</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metrics:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td> </td>
+     <td class="ac">Total</td>
+     <td class="ac">Average</td>
+     <td class="ac">Maximum</td>
+     <td>Function name</td>
+    </tr>
+    <tr>
+     <td>Functions:</td>
+     <td class="ar"><b>9</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Lines of code:</td>
+     <td class="ar"><b>222</b></td>
+     <td class="ar"><span class="textOk">24.67 ± 23.52</span></td>
+     <td class="ar"><span class="textWarn">83</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+    <tr>
+     <td>Cyclomatic complexity:</td>
+     <td class="ar"><b>63</b></td>
+     <td class="ar"><span class="textOk">7.00 ± 4.74</span></td>
+     <td class="ar"><span class="textOk">16</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>5</b></td>
+    <td class="tbFailSepCell" align="left"><b>2023-12-04 11:34:17</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" data-savepage-href="?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595394" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595394">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Submission status:</b></td>
+    <td class="tCell" align="left">Evaluated</td>
+
+
+
+    <td class="rtbCell" rowspan="2"> </td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Evaluation:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Evaluator: computer</b><ul><li>Program compiled</li><li>Test 'Basic test with example input data': success<ul><li>result: 100.00 %, required: 100.00 %</li><li>Max. run time: 0.007 s (limit: 1.000 s)</li><li>Total run time: 0.035 s</li><li>Peak mem usage: 2628 KiB (limit: 4036 KiB)</li><li>Mandatory test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Borderline test': Abnormal program termination  (Time limit exceeded)<ul><li>Program was killed after: 2.006 s (limit: 2.000 s)</li><li>Mandatory test failed, evaluation: 0.00 %</li><li>Time limit exceeded <a data-savepage-href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5563844')" href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5563844%27)">[Unlock advice (2.00 KiB, incomplete data)]</a></li></ul></li>
+<li>Overall ratio: 0.00 % (= 1.00 * 0.00)</li></ul></li><li>Advices used: 1</li><li>Penalty due to advices: None (1 &lt;= 2 limit)</li><li>Total percent: 0.00 %</li><li>Total points: 0.00 * 5.00 = 0.00</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metrics:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td> </td>
+     <td class="ac">Total</td>
+     <td class="ac">Average</td>
+     <td class="ac">Maximum</td>
+     <td>Function name</td>
+    </tr>
+    <tr>
+     <td>Functions:</td>
+     <td class="ar"><b>9</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Lines of code:</td>
+     <td class="ar"><b>222</b></td>
+     <td class="ar"><span class="textOk">24.67 ± 23.52</span></td>
+     <td class="ar"><span class="textWarn">83</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+    <tr>
+     <td>Cyclomatic complexity:</td>
+     <td class="ar"><b>63</b></td>
+     <td class="ar"><span class="textOk">7.00 ± 4.74</span></td>
+     <td class="ar"><span class="textOk">16</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbHalfSepCell" align="left"><b>4</b></td>
+    <td class="tbHalfSepCell" align="left"><b>2023-12-04 11:32:41</b></td>
+    <td class="rtbHalfSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" data-savepage-href="?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595389" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595389">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Submission status:</b></td>
+    <td class="tCell" align="left">Evaluated</td>
+
+
+
+    <td class="rtbCell" rowspan="2"> </td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Evaluation:</b></td>
+    <td class="bCell" align="left">2.5000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Evaluator: computer</b><ul><li>Program compiled</li><li>Test 'Basic test with example input data': success<ul><li>result: 100.00 %, required: 100.00 %</li><li>Max. run time: 0.007 s (limit: 1.000 s)</li><li>Total run time: 0.034 s</li><li>Peak mem usage: 2628 KiB (limit: 4036 KiB)</li><li>Mandatory test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Borderline test': success<ul><li>result: 100.00 %, required: 100.00 %</li><li>Max. run time: 1.840 s (limit: 2.000 s)</li><li>Total run time: 5.640 s</li><li>Mandatory test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Invalid input test': success<ul><li>result: 100.00 %, required: 50.00 %</li><li>Max. run time: 0.005 s (limit: 1.000 s)</li><li>Total run time: 0.118 s</li><li>Optional test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Random test': success<ul><li>result: 100.00 %, required: 50.00 %</li><li>Max. run time: 1.858 s (limit: 4.000 s)</li><li>Total run time: 13.374 s</li><li>Optional test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Random test + mem debugger': Abnormal program termination (Segmentation fault/Bus error/Memory limit exceeded/Stack limit exceeded)<ul><li>Max. run time: 0.044 s (limit: 4.000 s)</li><li>Total run time: 0.044 s</li><li>Optional test failed, evaluation: 50.00 %</li><li>Seggmentation fault <a data-savepage-href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5563825')" href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5563825%27)">[Unlock advice (2.00 KiB, incomplete data)]</a></li></ul></li>
+<li>Test 'Speed test #1': Not tested<ul><li>Bonus test - failed, evaluation: No bonus awarded</li></ul></li>
+<li>Test 'Speed test #2': Not tested<ul><li>Bonus test - failed, evaluation: No bonus awarded</li></ul></li>
+<li>Overall ratio: 50.00 % (= 1.00 * 1.00 * 1.00 * 1.00 * 0.50)</li></ul></li><li>Advices used: 1</li><li>Penalty due to advices: None (1 &lt;= 2 limit)</li><li>Total percent: 50.00 %</li><li>Total points: 0.50 * 5.00 = 2.50</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metrics:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td> </td>
+     <td class="ac">Total</td>
+     <td class="ac">Average</td>
+     <td class="ac">Maximum</td>
+     <td>Function name</td>
+    </tr>
+    <tr>
+     <td>Functions:</td>
+     <td class="ar"><b>9</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Lines of code:</td>
+     <td class="ar"><b>222</b></td>
+     <td class="ar"><span class="textOk">24.67 ± 23.52</span></td>
+     <td class="ar"><span class="textWarn">83</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+    <tr>
+     <td>Cyclomatic complexity:</td>
+     <td class="ar"><b>63</b></td>
+     <td class="ar"><span class="textOk">7.00 ± 4.74</span></td>
+     <td class="ar"><span class="textOk">16</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>3</b></td>
+    <td class="tbFailSepCell" align="left"><b>2023-12-04 11:26:41</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" data-savepage-href="?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595372" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595372">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Submission status:</b></td>
+    <td class="tCell" align="left">Evaluated</td>
+
+
+
+    <td class="rtbCell" rowspan="2"> </td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Evaluation:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Evaluator: computer</b><ul><li>Program compiled</li><li>Test 'Basic test with example input data': success<ul><li>result: 100.00 %, required: 100.00 %</li><li>Max. run time: 0.006 s (limit: 1.000 s)</li><li>Total run time: 0.034 s</li><li>Peak mem usage: 2628 KiB (limit: 4036 KiB)</li><li>Mandatory test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Borderline test': failed<ul><li>result: 75.00 %, required: 100.00 %</li><li>Max. run time: 1.957 s (limit: 2.000 s)</li><li>Total run time: 4.185 s</li><li>Mandatory test failed, evaluation: 0.00 %</li><li>Failed (invalid output) <a data-savepage-href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5563731')" href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5563731%27)">[Unlock advice (2.07 KiB, incomplete data)]</a></li><li><input type="checkbox" name="cb_T5563732" onchange="CBpressed( 'T5563732' )"> Failed (invalid output)<div id="pre_T5563732" style="display: none; padding-left: 20px;"><input type="checkbox" name="cb_I5563732" onchange="CBpressed( 'I5563732' )"> Input data <a data-savepage-href="?X=Advice&UID=I5563732" href="https://progtest.fit.cvut.cz/index.php?X=Advice&UID=I5563732">[2048 B / 12634 B]</a><br><pre id="pre_I5563732" style="display: none">+ 2000-01-01 6 beabbrpeobxjfvnkl
++ 2000-01-02 2 fbornomobuipupgynvd
++ 2000-01-03 60 asahprzbpodryvqqt
++ 2000-01-04 4 rsypiwyzayxwbmanm
++ 2000-01-05 11 ufzppxovlqtkwppwe
++ 2000-01-06 70 ydwwvmskybrqqtqpeh
++ 2000-01-07 40 chmiavsrcedfszhwpi
++ 2000-01-08 63 dvflwotbjjntxyvlk
++ 2000-01-09 84 sczdgrmkfsjuqwur
++ 2000-01-10 97 qiezvmdodrnwtacglvc
++ 2000-01-11 52 zouvoiclekekvjanlps
++ 2000-01-12 13 nfqchisysxcjoiliwnw
++ 2000-01-13 34 olycdkarijnetkuaqyo
++ 2000-01-14 23 phlkzukyvyddfbsi
++ 2000-01-15 74 xkywyciqqftsxkhz
++ 2000-01-16 92 gfjfffhtjqqhaonruc
++ 2000-01-17 6 hjeczlybuzyivqwnb
++ 2000-01-18 56 vupwbtwmwnaogfzbcy
++ 2000-01-19 78 ejcyigmosgjxaklsl
++ 2000-01-20 40 xajfbpupwctemisky
++ 2000-01-21 10 nnowxmmkszlylxmniq
++ 2000-01-22 58 ibstazpqivbaijsymi
++ 2000-01-23 65 efwgxtprfphwcdinn
++ 2000-01-24 14 tnumbsntcpayoxvqybj
++ 2000-01-25 50 leotzvnyknrjaasjvvt
++ 2000-01-26 36 bbempgixmfqpemeco
++ 2000-01-27 18 kgdwheajlaceyzwhz
++ 2000-01-28 70 oesgnzrovqrsaioup
++ 2000-01-29 25 zsmwajjgeegteflndq
++ 2000-01-30 7 kkkuvpzyj
+
+&lt;skipping 10586 B&gt;
+
+qbwalppcuomqnzn
++ 2000-12-03 73 rwglvhxiixtekpeeum
++ 2000-12-04 37 jmvlhhshspggzsibq
++ 2000-12-05 65 ljufsfarglmadaswxz
++ 2000-12-06 97 vhmirkwypciybbxp
++ 2000-12-07 23 zrunrxkkygihbxxsmcj
++ 2000-12-08 95 wevtjsqzmtfllfnobw
++ 2000-12-09 38 yvzgnicjckmjrekzz
++ 2000-12-10 65 jhuykmdvmfirchpluja
++ 2000-12-11 4 hoboyefdyrqxjlqnu
++ 2000-12-12 59 kocezudekerzgvfozh
++ 2000-12-13 83 ngicpmmkrjgrmitsim
++ 2000-12-14 22 azhnrhrcdxpbjfgvgi
++ 2000-12-15 57 bjhypjsxesaedaej
++ 2000-12-16 64 brczehegrywvkdgdhn
++ 2000-12-17 28 frrlwfbraahhvqwsft
++ 2000-12-18 83 buldpybgqdnjwysged
++ 2000-12-19 57 motkumdbgceobphsdu
++ 2000-12-20 91 catbhpdlepqfszgrp
++ 2000-12-21 32 zeomzmpovadfgqjsg
++ 2000-12-22 58 ydorlwejcjbvuvcverl
++ 2000-12-23 98 gswmpsosyfsijfkqez
++ 2000-12-24 94 kotxwgpsoyglpypehw
++ 2000-12-25 22 xxpyeqsryzckjlurxt
++ 2000-12-26 52 vhpvlxhhqhfunogjvj
++ 2000-12-27 59 jrqeotiilhbmetmwj
++ 2000-12-28 21 rghcbkjwfrqyuvrn
++ 2000-12-29 85 omznjqmrtkbtwyjqi
++ 2000-12-30 74 vcisoitkefdxkvqsgz
++ 2000-12-31 72 prsmijpjwyhodjrgsm
+# 9
+</pre><input type="checkbox" name="cb_O5563732" onchange="CBpressed( 'O5563732' )"> Output data <a data-savepage-href="?X=Advice&UID=O5563732" href="https://progtest.fit.cvut.cz/index.php?X=Advice&UID=O5563732">[24 B / 24 B]</a><br><pre id="pre_O5563732" style="display: none">Reviews:
+Invalid input.
+</pre><input type="checkbox" name="cb_R5563732" onchange="CBpressed( 'R5563732' )"> Reference <a data-savepage-href="?X=Advice&UID=R5563732" href="https://progtest.fit.cvut.cz/index.php?X=Advice&UID=R5563732">[47 B / 47 B]</a><br><pre id="pre_R5563732" style="display: none">Reviews:
+2000-09-02 - 2000-09-11: 47.500000 25
+</pre></div></li><li>Failed (invalid output) <a data-savepage-href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5563733')" href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5563733%27)">[Unlock advice (2.07 KiB, incomplete data)]</a></li></ul></li>
+<li>Overall ratio: 0.00 % (= 1.00 * 0.00)</li></ul></li><li>Total percent: 0.00 %</li><li>Total points: 0.00 * 5.00 = 0.00</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metrics:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td> </td>
+     <td class="ac">Total</td>
+     <td class="ac">Average</td>
+     <td class="ac">Maximum</td>
+     <td>Function name</td>
+    </tr>
+    <tr>
+     <td>Functions:</td>
+     <td class="ar"><b>9</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Lines of code:</td>
+     <td class="ar"><b>222</b></td>
+     <td class="ar"><span class="textOk">24.67 ± 23.52</span></td>
+     <td class="ar"><span class="textWarn">83</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+    <tr>
+     <td>Cyclomatic complexity:</td>
+     <td class="ar"><b>63</b></td>
+     <td class="ar"><span class="textOk">7.00 ± 4.74</span></td>
+     <td class="ar"><span class="textOk">16</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>2</b></td>
+    <td class="tbFailSepCell" align="left"><b>2023-12-04 11:15:28</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" data-savepage-href="?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595335" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1595335">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Submission status:</b></td>
+    <td class="tCell" align="left">Evaluated</td>
+
+
+
+    <td class="rtbCell" rowspan="2"> </td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Evaluation:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Evaluator: computer</b><ul><li>Program compiled</li><li>Test 'Basic test with example input data': success<ul><li>result: 100.00 %, required: 100.00 %</li><li>Max. run time: 0.008 s (limit: 1.000 s)</li><li>Total run time: 0.035 s</li><li>Peak mem usage: 2752 KiB (limit: 4036 KiB)</li><li>Mandatory test success, evaluation: 100.00 %</li></ul></li>
+<li>Test 'Borderline test': Abnormal program termination  (Time limit exceeded)<ul><li>Program was killed after: 2.006 s (limit: 2.000 s)</li><li>Mandatory test failed, evaluation: 0.00 %</li><li>Time limit exceeded <a data-savepage-href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5563480')" href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5563480%27)">[Unlock advice (2.00 KiB, incomplete data)]</a></li></ul></li>
+<li>Overall ratio: 0.00 % (= 1.00 * 0.00)</li></ul></li><li>Total percent: 0.00 %</li><li>Total points: 0.00 * 5.00 = 0.00</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metrics:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td> </td>
+     <td class="ac">Total</td>
+     <td class="ac">Average</td>
+     <td class="ac">Maximum</td>
+     <td>Function name</td>
+    </tr>
+    <tr>
+     <td>Functions:</td>
+     <td class="ar"><b>9</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Lines of code:</td>
+     <td class="ar"><b>230</b></td>
+     <td class="ar"><span class="textOk">25.56 ± 23.07</span></td>
+     <td class="ar"><span class="textWarn">83</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+    <tr>
+     <td>Cyclomatic complexity:</td>
+     <td class="ar"><b>66</b></td>
+     <td class="ar"><span class="textOk">7.33 ± 4.47</span></td>
+     <td class="ar"><span class="textOk">16</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div> <br>
+ <div class="topLayout">
+  <div class="outBox">
+   <table width="100%" border="0" cellspacing="0" cellpadding="2" id="maintable">
+    <colgroup><col width="200">
+    <col>
+    <col width="130">
+
+   </colgroup><tbody><tr>
+    <td class="ltbFailSepCell" align="left"><b>1</b></td>
+    <td class="tbFailSepCell" align="left"><b>2023-12-04 01:35:10</b></td>
+    <td class="rtbFailSepCell" align="center"><div class="but1 w120"><div class="but2"><a class="butLink" data-savepage-href="?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1594734" href="https://progtest.fit.cvut.cz/index.php?X=TaskD&Cou=396&Tgr=2562&Tsk=1816&Sub=1594734">Download</a></div></div></td>
+   </tr>
+   <tr>
+    <td class="ltCell" align="left"><b>Submission status:</b></td>
+    <td class="tCell" align="left">Evaluated</td>
+
+
+
+    <td class="rtbCell" rowspan="2"> </td>
+
+
+   </tr>
+
+   <tr>
+    <td class="lbCell" align="left"><b>Evaluation:</b></td>
+    <td class="bCell" align="left">0.0000</td>
+   </tr>   <tr>
+    <td class="lrtbCell" colspan="3" align="left"><ul><li><b>Evaluator: computer</b><ul><li>Program compiled</li><li>Test 'Basic test with example input data': failed<ul><li>result: 33.33 %, required: 100.00 %</li><li>Max. run time: 0.006 s (limit: 1.000 s)</li><li>Total run time: 0.034 s</li><li>Peak mem usage: 2464 KiB (limit: 4036 KiB)</li><li>Mandatory test failed, evaluation: 0.00 %</li><li>Failed (invalid output) <a data-savepage-href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5560748')" href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5560748%27)">[Unlock advice (1.71 KiB)]</a></li><li>Failed (invalid output) <a data-savepage-href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5560749')" href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5560749%27)">[Unlock advice (575 B)]</a></li><li>Failed (invalid output) <a data-savepage-href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5560750')" href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5560750%27)">[Unlock advice (201 B)]</a></li><li>Failed (invalid output) <a data-savepage-href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5560751')" href="javascript: unlockAdvice('?X=Unlock&Cou=396&Tgr=2562&Tsk=1816&Unl=L5560751%27)">[Unlock advice (371 B)]</a></li></ul></li>
+<li>Overall ratio: 0.00 %</li></ul></li><li>Total percent: 0.00 %</li><li>Total points: 0.00 * 5.00 = 0.00</li></ul></td>
+   </tr> <tr>
+  <td class="ltbCell" align="left"><b>SW metrics:</b></td>
+  <td class="rtbCell" colspan="2" align="left">
+   <table border="0" cellpadding="2">
+    <tbody><tr>
+     <td> </td>
+     <td class="ac">Total</td>
+     <td class="ac">Average</td>
+     <td class="ac">Maximum</td>
+     <td>Function name</td>
+    </tr>
+    <tr>
+     <td>Functions:</td>
+     <td class="ar"><b>8</b></td>
+     <td class="ar">--</td>
+     <td class="ar">--</td>
+     <td>--</td>
+    </tr>
+    <tr>
+     <td>Lines of code:</td>
+     <td class="ar"><b>198</b></td>
+     <td class="ar"><span class="textOk">24.75 ± 22.62</span></td>
+     <td class="ar"><span class="textWarn">77</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+    <tr>
+     <td>Cyclomatic complexity:</td>
+     <td class="ar"><b>54</b></td>
+     <td class="ar"><span class="textOk">6.75 ± 4.84</span></td>
+     <td class="ar"><span class="textOk">17</span></td>
+     <td><tt>main</tt></td>
+    </tr>
+   </tbody></table>
+  </td>
+ </tr>   </tbody></table>
+  </div>
+ </div>
+  </center>
+ </form>
+
+
+
+
+
+
+
+
+<script language="javascript" data-savepage-type="text/javascript" type="text/plain"></script>
+
+
+
+
+
+ 
+
+
+</body></html>
