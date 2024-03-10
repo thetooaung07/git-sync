@@ -224,19 +224,19 @@
     <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(100,120)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="b"/>
+      <a name="label" val="c"/>
     </comp>
     <comp lib="0" loc="(100,150)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="a"/>
+      <a name="label" val="d"/>
     </comp>
     <comp lib="0" loc="(100,60)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="d"/>
+      <a name="label" val="a"/>
     </comp>
     <comp lib="0" loc="(100,90)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="c"/>
+      <a name="label" val="b"/>
     </comp>
     <comp lib="0" loc="(520,120)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -631,19 +631,19 @@
     </comp>
     <comp lib="0" loc="(390,240)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="d"/>
+      <a name="label" val="a"/>
     </comp>
     <comp lib="0" loc="(390,260)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="c"/>
+      <a name="label" val="b"/>
     </comp>
     <comp lib="0" loc="(390,280)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="b"/>
+      <a name="label" val="c"/>
     </comp>
     <comp lib="0" loc="(390,300)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="a"/>
+      <a name="label" val="d"/>
     </comp>
     <comp lib="0" loc="(610,240)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -887,30 +887,6 @@
     <a name="circuit" val="multiseggsim"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
-    <comp lib="0" loc="(190,190)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="an0"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(190,230)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="an1"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(190,250)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="an2"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(190,270)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="an3"/>
-      <a name="output" val="true"/>
-    </comp>
     <comp lib="0" loc="(380,200)" name="Pin">
       <a name="appearance" val="NewPins"/>
     </comp>
@@ -923,8 +899,6 @@
     <comp lib="0" loc="(380,260)" name="Pin">
       <a name="appearance" val="NewPins"/>
     </comp>
-    <comp lib="0" loc="(70,170)" name="Power"/>
-    <comp lib="0" loc="(70,320)" name="Ground"/>
     <comp lib="5" loc="(1010,510)" name="7-Segment Display">
       <a name="label" val="L_7_Segment_Display_1"/>
     </comp>
@@ -943,14 +917,6 @@
     <wire from="(600,220)" to="(610,220)"/>
     <wire from="(600,240)" to="(610,240)"/>
     <wire from="(600,260)" to="(610,260)"/>
-    <wire from="(70,170)" to="(70,190)"/>
-    <wire from="(70,190)" to="(190,190)"/>
-    <wire from="(70,230)" to="(190,230)"/>
-    <wire from="(70,230)" to="(70,250)"/>
-    <wire from="(70,250)" to="(190,250)"/>
-    <wire from="(70,250)" to="(70,270)"/>
-    <wire from="(70,270)" to="(190,270)"/>
-    <wire from="(70,270)" to="(70,320)"/>
     <wire from="(830,200)" to="(1030,200)"/>
     <wire from="(830,220)" to="(1040,220)"/>
     <wire from="(830,240)" to="(970,240)"/>
