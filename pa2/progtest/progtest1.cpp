@@ -19,132 +19,160 @@
 
 using namespace std;
 
-class CIterator
-{
+
+struct SLandlot {
+    SLandlot(const string &, const string &, const string &, unsigned int);
+
+    SLandlot(const string &, const string &, const string &, unsigned int, const string &);
+
+
+//    SLandlot(const string &, const string &, const string &);
+//
+//    SLandlot(const string &, const string &);
+//
+//    SLandlot(const string &);
+
+    string m_city, m_addr, m_region, m_owner;
+    unsigned int m_id;
+};
+
+
+SLandlot::SLandlot(const string &city, const string &address, const string &region, unsigned int id)
+        : m_city(city), m_addr(address), m_region(region), m_id(id) {}
+
+
+SLandlot::SLandlot(const string &city, const string &address, const string &region, unsigned int id,
+                   const string &owner)
+        : m_city(city), m_addr(address), m_region(region), m_id(id), m_owner(owner) {}
+
+class CIterator {
 public:
-  CIterator(const string &, const string &, const string &, unsigned int);
 
-  bool atEnd() const;
+    bool atEnd() const;
 
-  void next();
+    void next();
 
-  std::string city() const;
+    std::string city() const;
 
-  std::string addr() const;
+    std::string addr() const;
 
-  std::string region() const;
+    std::string region() const;
 
-  unsigned id() const;
+    unsigned id() const;
 
-  std::string owner() const;
+    std::string owner() const;
+
+    CIterator(const vector<SLandlot *> &data) : m_lots(data), index(0) {};
+
 
 private:
-  string m_city, m_addr, m_region, m_owner;
-  unsigned int m_id;
+
+    const vector<SLandlot *> &m_lots;
+    int index;
 };
 
-CIterator::CIterator(const std::string &city, const std::string &addr, const std::string &region, unsigned int id)
-    : m_city(city), m_addr(addr), m_region(region), m_id(id)
-{
-}
-
-bool CIterator::atEnd() const {};
-
-void CIterator::next(){};
-
-string CIterator::city() const
-{
-  return this->m_city;
+bool CIterator::atEnd() const {
+    return index >= m_lots.size();
 };
 
-string CIterator::addr() const { return this->m_addr; }
+void CIterator::next() {
+    index++;
+};
 
-string CIterator::region() const { return this->m_region; }
+string CIterator::city() const {
 
-unsigned CIterator::id() const { return this->m_id; }
+    cout << m_lots.at(1)->m_city << endl;
+//    cout << "CITy  ---  " << m_lots.at(index)->m_city << endl;
+    return m_lots.at(index)->m_city;
+};
 
-std::string CIterator::owner() const {return  this->m_owner;};
+string CIterator::addr() const { return this->m_lots.at(this->index)->m_addr; }
 
-class CLandRegister
-{
+string CIterator::region() const { return this->m_lots.at(this->index)->m_region; }
+
+unsigned CIterator::id() const { return this->m_lots.at(this->index)->m_id; }
+
+std::string CIterator::owner() const { return this->m_lots.at(this->index)->m_owner; }
+
+
+class CLandRegister {
 public:
-  CLandRegister();
+    CLandRegister();
 
-  ~CLandRegister();
+    ~CLandRegister();
 
-  bool add(const std::string &city,
-           const std::string &addr,
-           const std::string &region,
-           unsigned int id);
+    bool add(const std::string &city,
+             const std::string &addr,
+             const std::string &region,
+             unsigned int id);
 
-  bool del(const std::string &city,
-           const std::string &addr);
+    bool del(const std::string &city,
+             const std::string &addr);
 
-  bool del(const std::string &region,
-           unsigned int id);
+    bool del(const std::string &region,
+             unsigned int id);
 
-  bool getOwner(const std::string &city,
-                const std::string &addr,
-                std::string &owner) const;
+    bool getOwner(const std::string &city,
+                  const std::string &addr,
+                  std::string &owner) const;
 
-  bool getOwner(const std::string &region,
-                unsigned int id,
-                std::string &owner) const;
+    bool getOwner(const std::string &region,
+                  unsigned int id,
+                  std::string &owner) const;
 
-  bool newOwner(const std::string &city,
-                const std::string &addr,
-                const std::string &owner);
+    bool newOwner(const std::string &city,
+                  const std::string &addr,
+                  const std::string &owner);
 
-  bool newOwner(const std::string &region,
-                unsigned int id,
-                const std::string &owner);
+    bool newOwner(const std::string &region,
+                  unsigned int id,
+                  const std::string &owner);
 
-  size_t count(const std::string &owner) const;
+    size_t count(const std::string &owner) const;
 
-  CIterator listByAddr() const;
+    CIterator listByAddr() const;
 
-  CIterator listByOwner(const std::string &owner) const;
+    CIterator listByOwner(const std::string &owner) const;
 
-  void print_arr();
+    void print_arr();
 
 private:
-  std::vector<CIterator *> city_arr;
-  std::vector<CIterator *> region_arr;
-  std::vector<CIterator *> owner_arr;
+    std::vector<SLandlot *> city_arr;
+    std::vector<SLandlot *> region_arr;
+    std::vector<SLandlot *> owner_arr;
 
-  bool find_by_city(CIterator landlot, vector<CIterator *>::const_iterator &idx);
+    bool find_by_city(SLandlot landlot, vector<SLandlot *>::const_iterator &idx);
 
-  bool find_by_region(CIterator landlot, vector<CIterator *>::const_iterator &idx);
+    bool find_by_region(SLandlot landlot, vector<SLandlot *>::const_iterator &idx);
 };
 
-bool compare_city(const CIterator *a, const CIterator &b)
-{
+bool compare_city(const SLandlot *a, const SLandlot &b) {
 
-  if (a->city() == b.city()){
-      return a->addr() < b.addr();
-  }
-  return a->city() < b.city();
+
+    if (a->m_city == b.m_city) {
+        return a->m_addr < b.m_addr;
+    }
+    return a->m_city < b.m_city;
 }
 
-bool compare_region(const CIterator *a, const CIterator &b)
-{
+bool compare_region(const SLandlot *a, const SLandlot &b) {
 
-  if (a->region() == b.region()){
-    return a->id() < b.id();
-  }
-  return a->region() < b.region();
+    if (a->m_region == b.m_region) {
+        return a->m_id < b.m_id;
+    }
+    return a->m_region < b.m_region;
 }
 
 void CLandRegister::print_arr() {
     cout << "--------------City Arr-----------" << endl;
     for (auto i = city_arr.begin(); i < city_arr.end(); ++i) {
-        cout << (*i)->city() << endl;
+        cout << (*i)->m_city << endl;
     }
 
     cout << "----------Region Arr-------------" << endl;
 
     for (auto i = region_arr.begin(); i < region_arr.end(); ++i) {
-        cout << (*i)->region() << endl;
+        cout << (*i)->m_region << endl;
     }
 
 }
@@ -152,52 +180,49 @@ void CLandRegister::print_arr() {
 /* Helper Function
  * */
 
-bool CLandRegister::find_by_city(CIterator landlot, vector<CIterator *>::const_iterator &idx)
-{
-  idx = lower_bound(city_arr.begin(), city_arr.end(), landlot, compare_city);
-  return (idx != city_arr.end() && (*idx)->city() == landlot.city() && (*idx)->addr() == landlot.addr());
+bool CLandRegister::find_by_city(SLandlot landlot, vector<SLandlot *>::const_iterator &idx) {
+    idx = lower_bound(city_arr.begin(), city_arr.end(), landlot, compare_city);
+    return (idx != city_arr.end() && (*idx)->m_city == landlot.m_city && (*idx)->m_addr == landlot.m_addr);
 }
 
-bool CLandRegister::find_by_region(CIterator landlot, vector<CIterator *>::const_iterator &idx)
-{
+bool CLandRegister::find_by_region(SLandlot landlot, vector<SLandlot *>::const_iterator &idx) {
 
-  idx = lower_bound(region_arr.begin(), region_arr.end(), landlot, compare_region);
-  return (idx != region_arr.end() && (*idx)->region() == landlot.region() && (*idx)->id() == landlot.id());
+    idx = lower_bound(region_arr.begin(), region_arr.end(), landlot, compare_region);
+    return (idx != region_arr.end() && (*idx)->m_region == landlot.m_region && (*idx)->m_id == landlot.m_id);
 }
 
 /* CLandRegister Class Definition
  * */
 
-CLandRegister::CLandRegister(){};
+CLandRegister::CLandRegister() {};
 
-CLandRegister::~CLandRegister(){};
+CLandRegister::~CLandRegister() {};
 
-bool CLandRegister::add(const std::string &city, const std::string &addr, const std::string &region, unsigned int id)
-{
+bool CLandRegister::add(const std::string &city, const std::string &addr, const std::string &region, unsigned int id) {
 
-  CIterator *landlot = new CIterator(city, addr, region, id);
-  vector<CIterator *>::const_iterator city_idx, region_idx;
+    SLandlot *landlot = new SLandlot(city, addr, region, id);
+    vector<SLandlot *>::const_iterator city_idx, region_idx;
 
-  if (find_by_city(*landlot, city_idx) || find_by_region(*landlot, region_idx))
-  {
-    delete landlot;
-    return false;
-  }
+    if (find_by_city(*landlot, city_idx) || find_by_region(*landlot, region_idx)) {
+        delete landlot;
+        return false;
+    }
 
-  city_arr.insert(city_idx, landlot);
-  region_arr.insert(region_idx, landlot);
+    city_arr.insert(city_idx, landlot);
+    region_arr.insert(region_idx, landlot);
+    owner_arr.push_back(landlot);
 
-  return true;
+    return true;
 }
 
 bool CLandRegister::del(const std::string &city,
-                        const std::string &addr){
+                        const std::string &addr) {
 
-    CIterator *landlot = new CIterator(city, addr, "", 0);
+    SLandlot *landlot = new SLandlot(city, addr, "", 0);
 
 
-    vector<CIterator * >::const_iterator  idx;
-    if(!find_by_city(*landlot, idx)) {
+    vector<SLandlot *>::const_iterator idx;
+    if (!find_by_city(*landlot, idx)) {
         delete landlot;
         return false;
     }
@@ -208,13 +233,13 @@ bool CLandRegister::del(const std::string &city,
 };
 
 bool CLandRegister::del(const std::string &region,
-                        unsigned int id){
+                        unsigned int id) {
 
-    CIterator *landlot = new CIterator("", "", region, id);
+    SLandlot *landlot = new SLandlot("", "", region, id);
 
 
-    vector<CIterator * >::const_iterator  idx;
-    if(!find_by_region(*landlot, idx)) {
+    vector<SLandlot *>::const_iterator idx;
+    if (!find_by_region(*landlot, idx)) {
         delete landlot;
         return false;
     }
@@ -233,105 +258,162 @@ bool CLandRegister::getOwner(const std::string &region,
 
 bool CLandRegister::newOwner(const std::string &city,
                              const std::string &addr,
-                             const std::string &owner){};
+                             const std::string &owner) {};
 
 bool CLandRegister::newOwner(const std::string &region,
                              unsigned int id,
-                             const std::string &owner){};
+                             const std::string &owner) {};
 
-size_t CLandRegister::count(const std::string &owner) const {};
+size_t CLandRegister::count(const std::string &owner) const {
 
-CIterator CLandRegister::listByAddr() const {};
+    int count = 0;
 
-CIterator CLandRegister::listByOwner(const std::string &owner) const {};
+    for (auto i = owner_arr.begin(); i < owner_arr.end(); ++i) {
+        if ((*i)->m_owner == owner) count++;
+    }
+
+    return count;
+
+};
+
+CIterator CLandRegister::listByAddr() const {
+    return CIterator(city_arr);
+};
+
+CIterator CLandRegister::listByOwner(const std::string &owner) const {
+    vector<SLandlot *> temp = new vector<SLandlot *>;
+    for (auto i = owner_arr.begin(); i < owner_arr.end(); ++i) {
+        if ((*i)->m_owner == owner) {
+            temp.push_back((*i));
+        }
+    }
+
+
+    return CIterator(temp);
+};
 
 #ifndef __PROGTEST__
+
+static void test0() {
+    CLandRegister x;
+    std::string owner;
+
+//    x.print_arr();
+
+    assert (x.add("Prague", "Thakurova", "Dejvice", 12345));
+    assert (x.add("Prague", "Evropska", "Vokovice", 12345));
+    assert (x.add("Prague", "Technicka", "Dejvice", 9873));
+    assert (x.add("Plzen", "Evropska", "Plzen mesto", 78901));
+    assert (x.add("Liberec", "Evropska", "Librec", 4552));
+
+
+    x.print_arr();
+
+
+    CIterator i0 = x.listByAddr();
+
+
+    assert (!i0.atEnd()
+            && i0.city() == "Liberec"
+            && i0.addr() == "Evropska"
+            && i0.region() == "Librec"
+            && i0.id() == 4552
+            && i0.owner() == "");
+    i0.next();
+
+    assert (!i0.atEnd()
+            && i0.city() == "Plzen"
+            && i0.addr() == "Evropska"
+            && i0.region() == "Plzen mesto"
+            && i0.id() == 78901
+            && i0.owner() == "");
+    i0.next();
+    assert (!i0.atEnd()
+            && i0.city() == "Prague"
+            && i0.addr() == "Evropska"
+            && i0.region() == "Vokovice"
+            && i0.id() == 12345
+            && i0.owner() == "");
+    i0.next();
+    assert (!i0.atEnd()
+            && i0.city() == "Prague"
+            && i0.addr() == "Technicka"
+            && i0.region() == "Dejvice"
+            && i0.id() == 9873
+            && i0.owner() == "");
+    i0.next();
+    assert (!i0.atEnd()
+            && i0.city() == "Prague"
+            && i0.addr() == "Thakurova"
+            && i0.region() == "Dejvice"
+            && i0.id() == 12345
+            && i0.owner() == "");
+
+
+    i0.next();
+
+
+    assert (i0.atEnd());
+
+    assert (x.count("") == 5);
+
+
+
+
+    //
+
+    CIterator i1 = x.listByOwner("");
+
+    cout << "CIty test --- " << endl;
+    assert(i1.city() == "Prague");
+
+
+    assert(i1.addr() == "Thakurova");
+
+    assert(i1.region() == "Dejvice");
+    assert(i1.id() == 12345);
+    assert(i1.owner() == "");
+
+
+    assert (!i1.atEnd()
+            && i1.city() == "Prague"
+            && i1.addr() == "Thakurova"
+            && i1.region() == "Dejvice"
+            && i1.id() == 12345
+            && i1.owner() == "");
+    i1.next();
+    assert (!i1.atEnd()
+            && i1.city() == "Prague"
+            && i1.addr() == "Evropska"
+            && i1.region() == "Vokovice"
+            && i1.id() == 12345
+            && i1.owner() == "");
+    i1.next();
+    assert (!i1.atEnd()
+            && i1.city() == "Prague"
+            && i1.addr() == "Technicka"
+            && i1.region() == "Dejvice"
+            && i1.id() == 9873
+            && i1.owner() == "");
+    i1.next();
+    assert (!i1.atEnd()
+            && i1.city() == "Plzen"
+            && i1.addr() == "Evropska"
+            && i1.region() == "Plzen mesto"
+            && i1.id() == 78901
+            && i1.owner() == "");
+    i1.next();
+    assert (!i1.atEnd()
+            && i1.city() == "Liberec"
+            && i1.addr() == "Evropska"
+            && i1.region() == "Librec"
+            && i1.id() == 4552
+            && i1.owner() == "");
+    i1.next();
+    assert (i1.atEnd());
 //
-// static void test0() {
-//    CLandRegister x;
-//    std::string owner;
 //
-//    assert (x.add("Prague", "Thakurova", "Dejvice", 12345));
-//    assert (x.add("Prague", "Evropska", "Vokovice", 12345));
-//    assert (x.add("Prague", "Technicka", "Dejvice", 9873));
-//    assert (x.add("Plzen", "Evropska", "Plzen mesto", 78901));
-//    assert (x.add("Liberec", "Evropska", "Librec", 4552));
-//    CIterator i0 = x.listByAddr();
-//    assert (!i0.atEnd()
-//            && i0.city() == "Liberec"
-//            && i0.addr() == "Evropska"
-//            && i0.region() == "Librec"
-//            && i0.id() == 4552
-//            && i0.owner() == "");
-//    i0.next();
-//    assert (!i0.atEnd()
-//            && i0.city() == "Plzen"
-//            && i0.addr() == "Evropska"
-//            && i0.region() == "Plzen mesto"
-//            && i0.id() == 78901
-//            && i0.owner() == "");
-//    i0.next();
-//    assert (!i0.atEnd()
-//            && i0.city() == "Prague"
-//            && i0.addr() == "Evropska"
-//            && i0.region() == "Vokovice"
-//            && i0.id() == 12345
-//            && i0.owner() == "");
-//    i0.next();
-//    assert (!i0.atEnd()
-//            && i0.city() == "Prague"
-//            && i0.addr() == "Technicka"
-//            && i0.region() == "Dejvice"
-//            && i0.id() == 9873
-//            && i0.owner() == "");
-//    i0.next();
-//    assert (!i0.atEnd()
-//            && i0.city() == "Prague"
-//            && i0.addr() == "Thakurova"
-//            && i0.region() == "Dejvice"
-//            && i0.id() == 12345
-//            && i0.owner() == "");
-//    i0.next();
-//    assert (i0.atEnd());
-//
-//    assert (x.count("") == 5);
-//    CIterator i1 = x.listByOwner("");
-//    assert (!i1.atEnd()
-//            && i1.city() == "Prague"
-//            && i1.addr() == "Thakurova"
-//            && i1.region() == "Dejvice"
-//            && i1.id() == 12345
-//            && i1.owner() == "");
-//    i1.next();
-//    assert (!i1.atEnd()
-//            && i1.city() == "Prague"
-//            && i1.addr() == "Evropska"
-//            && i1.region() == "Vokovice"
-//            && i1.id() == 12345
-//            && i1.owner() == "");
-//    i1.next();
-//    assert (!i1.atEnd()
-//            && i1.city() == "Prague"
-//            && i1.addr() == "Technicka"
-//            && i1.region() == "Dejvice"
-//            && i1.id() == 9873
-//            && i1.owner() == "");
-//    i1.next();
-//    assert (!i1.atEnd()
-//            && i1.city() == "Plzen"
-//            && i1.addr() == "Evropska"
-//            && i1.region() == "Plzen mesto"
-//            && i1.id() == 78901
-//            && i1.owner() == "");
-//    i1.next();
-//    assert (!i1.atEnd()
-//            && i1.city() == "Liberec"
-//            && i1.addr() == "Evropska"
-//            && i1.region() == "Librec"
-//            && i1.id() == 4552
-//            && i1.owner() == "");
-//    i1.next();
-//    assert (i1.atEnd());
+////    x.print_arr();
 //
 //    assert (x.count("CVUT") == 0);
 //    CIterator i2 = x.listByOwner("CVUT");
@@ -468,8 +550,8 @@ CIterator CLandRegister::listByOwner(const std::string &owner) const {};
 //    assert (i6.atEnd());
 //
 //    assert (x.add("Liberec", "Evropska", "Librec", 4552));
-//}
-//
+}
+
 // static void test1() {
 //    CLandRegister x;
 //    std::string owner;
@@ -529,28 +611,21 @@ CIterator CLandRegister::listByOwner(const std::string &owner) const {};
 //    assert (!x.del("Dejvice", 9873));
 //}
 
-int main(void)
-{
-  //    test0();
-  //    test1();
+int main(void) {
+    test0();
+    //    test1();
 
-  CLandRegister x;
-  std::string owner;
-  assert(x.add("Prague", "Thakurova", "Dejvice", 12345));
-  assert(x.add("Prague", "Evropska", "Vokovice", 12345));
-  assert(x.add("Prague", "Technicka", "Dejvice", 9873));
-  assert(x.add("Plzen", "Evropska", "Plzen mesto", 78901));
-  assert(x.add("Liberec", "Evropska", "Librec", 4552));
+//    CLandRegister x;
+//    std::string owner;
+//    assert(x.add("Prague", "Thakurova", "Dejvice", 12345));
+//    assert(x.add("Prague", "Evropska", "Vokovice", 12345));
+//    assert(x.add("Prague", "Technicka", "Dejvice", 9873));
+//    assert(x.add("Plzen", "Evropska", "Plzen mesto", 78901));
+//    assert(x.add("Liberec", "Evropska", "Librec", 4552));
 
-    assert (x.del("Plzen", "Evropska"));
-    assert (x.del("Dejvice", 12345));
-    assert (!x.del("Karlin", 9873));
-    assert (x.del("Prague", "Technicka"));
-    assert (!x.del("Prague", "Technicka"));
-    assert (x.del("Dejvice", 9873));
 
-  x.print_arr();
-  return EXIT_SUCCESS;
+
+    return EXIT_SUCCESS;
 }
 
 #endif /* __PROGTEST__ */
