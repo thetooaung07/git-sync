@@ -129,10 +129,18 @@
       <a name="label" val="cout"/>
       <a name="output" val="true"/>
     </comp>
-    <comp loc="(400,130)" name="adderCirc"/>
-    <comp loc="(400,270)" name="adderCirc"/>
-    <comp loc="(400,420)" name="adderCirc"/>
-    <comp loc="(400,580)" name="adderCirc"/>
+    <comp loc="(400,130)" name="adderCirc">
+      <a name="label" val="adderCirc_1"/>
+    </comp>
+    <comp loc="(400,270)" name="adderCirc">
+      <a name="label" val="adderCirc_2"/>
+    </comp>
+    <comp loc="(400,420)" name="adderCirc">
+      <a name="label" val="adderCirc_3"/>
+    </comp>
+    <comp loc="(400,580)" name="adderCirc">
+      <a name="label" val="adderCirc_4"/>
+    </comp>
     <wire from="(160,130)" to="(180,130)"/>
     <wire from="(160,150)" to="(180,150)"/>
     <wire from="(160,170)" to="(180,170)"/>
@@ -935,7 +943,25 @@
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="multiseggbasys"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="downloadBoard" val="BASYS3"/>
     <a name="simulationFrequency" val="1.0"/>
+    <boardmap boardname="BASYS3">
+      <mc key="/a0" map="647,323"/>
+      <mc key="/a1" map="609,323"/>
+      <mc key="/an0" map="130,234"/>
+      <mc key="/an1" map="180,234"/>
+      <mc key="/an2" map="225,234"/>
+      <mc key="/an3" map="273,234"/>
+      <mc key="/b0" map="571,323"/>
+      <mc key="/b1" map="535,323"/>
+      <mc key="/sa" map="136,245"/>
+      <mc key="/sb" map="154,248"/>
+      <mc key="/sc" map="154,262"/>
+      <mc key="/sd" map="136,274"/>
+      <mc key="/se" map="130,263"/>
+      <mc key="/sf" map="130,249"/>
+      <mc key="/sg" map="138,258"/>
+    </boardmap>
     <comp lib="0" loc="(190,190)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
@@ -1071,6 +1097,11 @@
     <comp lib="0" loc="(200,300)" name="Pin">
       <a name="appearance" val="NewPins"/>
     </comp>
+    <comp lib="0" loc="(870,730)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
     <comp lib="5" loc="(870,600)" name="7-Segment Display">
       <a name="label" val="L_7_Segment_Display_1"/>
     </comp>
@@ -1082,6 +1113,8 @@
     <wire from="(420,160)" to="(470,160)"/>
     <wire from="(420,180)" to="(490,180)"/>
     <wire from="(420,200)" to="(500,200)"/>
+    <wire from="(420,220)" to="(420,730)"/>
+    <wire from="(420,730)" to="(870,730)"/>
     <wire from="(470,160)" to="(470,330)"/>
     <wire from="(470,330)" to="(510,330)"/>
     <wire from="(480,140)" to="(480,350)"/>
@@ -1110,5 +1143,174 @@
     <wire from="(890,290)" to="(890,600)"/>
     <wire from="(890,660)" to="(890,700)"/>
     <wire from="(900,310)" to="(900,600)"/>
+  </circuit>
+  <circuit name="decoder4bitbasys">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="decoder4bitbasys"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="downloadBoard" val="BASYS3"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <boardmap boardname="BASYS3">
+      <mc key="/A0" map="647,323"/>
+      <mc key="/A1" map="609,323"/>
+      <mc key="/A2" map="571,323"/>
+      <mc key="/A3" map="535,323"/>
+      <mc key="/B0" map="497,323"/>
+      <mc key="/B1" map="456,323"/>
+      <mc key="/B2" map="417,323"/>
+      <mc key="/B3" map="382,323"/>
+      <mc key="/an0" map="130,234"/>
+      <mc key="/an1" map="180,234"/>
+      <mc key="/an2" map="225,234"/>
+      <mc key="/an3" map="273,234"/>
+      <mc key="/cin" map="582,238"/>
+      <mc key="/cout" map="649,295"/>
+      <mc key="/sa" map="136,245"/>
+      <mc key="/sb" map="154,248"/>
+      <mc key="/sc" map="154,262"/>
+      <mc key="/sd" map="136,274"/>
+      <mc key="/se" map="130,263"/>
+      <mc key="/sf" map="130,249"/>
+      <mc key="/sg" map="138,258"/>
+    </boardmap>
+    <comp lib="0" loc="(1160,410)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="sa"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1160,430)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="sb"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1160,450)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="sc"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1160,470)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="sd"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1160,490)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="se"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1160,510)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="sf"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1160,530)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="sg"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1160,590)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="cout"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(230,280)" name="Power"/>
+    <comp lib="0" loc="(230,430)" name="Ground"/>
+    <comp lib="0" loc="(350,300)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="an0"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(350,340)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="an1"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(350,360)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="an2"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(350,380)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="an3"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(590,260)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="A0"/>
+    </comp>
+    <comp lib="0" loc="(590,280)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="B0"/>
+    </comp>
+    <comp lib="0" loc="(590,300)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="cin"/>
+    </comp>
+    <comp lib="0" loc="(590,320)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="A1"/>
+    </comp>
+    <comp lib="0" loc="(590,340)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="B1"/>
+    </comp>
+    <comp lib="0" loc="(590,360)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="A2"/>
+    </comp>
+    <comp lib="0" loc="(590,380)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="B2"/>
+    </comp>
+    <comp lib="0" loc="(590,400)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="A3"/>
+    </comp>
+    <comp lib="0" loc="(590,420)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="B3"/>
+    </comp>
+    <comp loc="(1160,410)" name="seg">
+      <a name="label" val="seg_1"/>
+    </comp>
+    <comp loc="(810,260)" name="adder1">
+      <a name="label" val="adder1_1"/>
+    </comp>
+    <wire from="(230,280)" to="(230,300)"/>
+    <wire from="(230,300)" to="(350,300)"/>
+    <wire from="(230,340)" to="(230,360)"/>
+    <wire from="(230,340)" to="(350,340)"/>
+    <wire from="(230,360)" to="(230,380)"/>
+    <wire from="(230,360)" to="(350,360)"/>
+    <wire from="(230,380)" to="(230,430)"/>
+    <wire from="(230,380)" to="(350,380)"/>
+    <wire from="(810,260)" to="(870,260)"/>
+    <wire from="(810,280)" to="(860,280)"/>
+    <wire from="(810,300)" to="(880,300)"/>
+    <wire from="(810,320)" to="(890,320)"/>
+    <wire from="(810,340)" to="(850,340)"/>
+    <wire from="(850,340)" to="(850,590)"/>
+    <wire from="(850,590)" to="(1160,590)"/>
+    <wire from="(860,280)" to="(860,450)"/>
+    <wire from="(860,450)" to="(940,450)"/>
+    <wire from="(870,260)" to="(870,470)"/>
+    <wire from="(870,470)" to="(940,470)"/>
+    <wire from="(880,300)" to="(880,430)"/>
+    <wire from="(880,430)" to="(940,430)"/>
+    <wire from="(890,320)" to="(890,410)"/>
+    <wire from="(890,410)" to="(940,410)"/>
   </circuit>
 </project>

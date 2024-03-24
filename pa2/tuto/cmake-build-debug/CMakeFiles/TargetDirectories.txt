@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 /Users/thet/Desktop/git-sync/pa2/tuto/cmake-build-debug/CMakeFiles/pa2.dir
 /Users/thet/Desktop/git-sync/pa2/tuto/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/thet/Desktop/git-sync/pa2/tuto/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+=======
+/Users/thet/Desktop/git-sync/pa2/cmake-build-debug/CMakeFiles/pa2.dir
+/Users/thet/Desktop/git-sync/pa2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/thet/Desktop/git-sync/pa2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+>>>>>>> refs/remotes/origin/master
