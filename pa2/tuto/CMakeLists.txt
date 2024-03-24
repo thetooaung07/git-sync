@@ -6,4 +6,6 @@ set(CMAKE_CXX_STANDARD 14)
 add_executable(pa2
         complex.cpp
         mystring.cpp
-        regex.cpp)
+        regex.cpp
+        operatorOverloading.cpp
+        prosem3.cpp)
