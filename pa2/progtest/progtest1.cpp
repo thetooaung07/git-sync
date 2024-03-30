@@ -186,15 +186,15 @@ bool compareSID(const SLandlot* l, const SLandlot* r) {
 // Helper Function
 
 bool CLandRegister::findByCity(const string &city, const string &addr) const {
-     SLandlot * temp = new SLandlot(city,addr);
-     auto city_itr = lower_bound(city_arr.begin(), city_arr.end(), temp, compareCity);
-     delete temp;
-     if(city_itr != city_arr.end()) {
-         if((*city_itr)->m_city == city && (*city_itr)->m_addr == addr)
-             return true;
+    SLandlot * temp = new SLandlot(city,addr);
+    auto city_itr = lower_bound(city_arr.begin(), city_arr.end(), temp, compareCity);
+    delete temp;
+    if(city_itr != city_arr.end()) {
+        if((*city_itr)->m_city == city && (*city_itr)->m_addr == addr)
+            return true;
 
-     }
-     return false;
+    }
+    return false;
 }
 
 bool CLandRegister::findByRegion(const string &region, unsigned  int id) const {
@@ -236,9 +236,9 @@ bool CLandRegister::add(const std::string &city, const std::string &addr, const 
         return false;
     }
     SLandlot *landlot = new SLandlot(city, addr, region, id);
- auto city_iter = lower_bound(city_arr.begin(), city_arr.end(), landlot,
+    auto city_iter = lower_bound(city_arr.begin(), city_arr.end(), landlot,
                                  compareCity);
-   auto region_iter = lower_bound(region_arr.begin(), region_arr.end(), landlot,
+    auto region_iter = lower_bound(region_arr.begin(), region_arr.end(), landlot,
                                    compareRegion);
     Owner temp = Owner("");
     auto owner_iter = lower_bound(owner_arr.begin(), owner_arr.end(), temp, compareOwner);
@@ -256,9 +256,9 @@ bool CLandRegister::add(const std::string &city, const std::string &addr, const 
 bool CLandRegister::del(const std::string &city,
                         const std::string &addr) {
 
-   if(!findByCity(city, addr)) return false;
+    if(!findByCity(city, addr)) return false;
 
-   SLandlot * temp = new SLandlot(city, addr);
+    SLandlot * temp = new SLandlot(city, addr);
     auto city_iter = lower_bound(city_arr.begin(), city_arr.end(), temp,
                                  compareCity);
 
@@ -376,7 +376,7 @@ bool CLandRegister::newOwner(const std::string &city,
 
     temp->s_id = (*city_iter)->s_id;
     auto inner_owner_iter = lower_bound(owner_iter->m_landlots.begin(), owner_iter->m_landlots.end(), temp,
-                                      compareSID);
+                                        compareSID);
 
     (*city_iter)->changeOwnerName(owner);
     owner_iter->m_landlots.erase(inner_owner_iter);
@@ -450,7 +450,7 @@ size_t CLandRegister::count(const std::string &owner) const {
     if(findByOwner(owner, owner_iter)){
         return owner_iter->m_landlots.size();
     }
-   return 0;
+    return 0;
 
 };
 
