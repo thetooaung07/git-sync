@@ -1,4 +1,6 @@
+
 #ifndef __PROGTEST__
+
 #include <cstring>
 #include <cstdlib>
 #include <cstdio>
@@ -17,6 +19,7 @@
 #include <functional>
 #include <compare>
 #include <stdexcept>
+
 #endif /* __PROGTEST__ */
 
 
@@ -76,14 +79,6 @@ public:
 
 
 
-        for (size_t i = 0; i < m_digits.size(); ++i) {
-                cout << m_digits.at(i) << "-";
-        }
-        cout << endl;
-        for (size_t i = 0; i < other.m_digits.size(); ++i) {
-                cout << other.m_digits.at(i) << "-";
-        }
-        cout << endl;
 
 
 
@@ -143,7 +138,8 @@ public:
     // output operator <<
     // input operator >>
 
- friend ostream& operator<<(std::ostream& os, const CBigInt& bigint) {
+
+    friend ostream& operator<<(std::ostream& os, const CBigInt& bigint) {
         if (bigint.m_isNegative)
             os << "-";
 
@@ -162,6 +158,7 @@ private:
 };
 
 #ifndef __PROGTEST__
+
 static bool equal ( const CBigInt & x, const char val [] )
 {
     std::ostringstream oss;
@@ -176,18 +173,17 @@ static bool equalHex ( const CBigInt & x, const char val [] )
     // oss << std::hex << x;
     // return oss . str () == val;
 }
-int main ()
-{
+int main () {
     CBigInt a, b;
     std::istringstream is;
     a = 124566;
     a += 20;
-    assert ( equal ( a, "30" ) );
+    assert(equal(a, "30"));
 
 
     // remove later
     b = a + "400";
-    assert ( equal ( b, "410" ) );
+    assert(equal(b, "410"));
     // remove later
 
 //
@@ -300,3 +296,4 @@ int main ()
     return EXIT_SUCCESS;
 }
 #endif /* __PROGTEST__ */
+

@@ -1,0 +1,3 @@
+/Users/thet/Desktop/git-sync/pa2/progtest/cmake-build-debug/CMakeFiles/progtest_1.dir
+/Users/thet/Desktop/git-sync/pa2/progtest/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/thet/Desktop/git-sync/pa2/progtest/cmake-build-debug/CMakeFiles/rebuild_cache.dir

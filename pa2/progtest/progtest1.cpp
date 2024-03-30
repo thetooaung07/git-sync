@@ -217,11 +217,19 @@ bool compareSID(const SLandlot *l, const SLandlot *r) {
 // Helper Function
 
 bool CLandRegister::findByCity(const string &city, const string &addr) const {
+<<<<<<< HEAD
     SLandlot *temp = new SLandlot(city, addr);
     auto city_itr = lower_bound(city_arr.begin(), city_arr.end(), temp, compareCity);
     delete temp;
     if (city_itr != city_arr.end()) {
         if ((*city_itr)->m_city == city && (*city_itr)->m_addr == addr)
+=======
+    SLandlot * temp = new SLandlot(city,addr);
+    auto city_itr = lower_bound(city_arr.begin(), city_arr.end(), temp, compareCity);
+    delete temp;
+    if(city_itr != city_arr.end()) {
+        if((*city_itr)->m_city == city && (*city_itr)->m_addr == addr)
+>>>>>>> 561722c25b112a94b46cb6ecc585028034295dfc
             return true;
 
     }
@@ -287,9 +295,15 @@ bool CLandRegister::add(const std::string &city, const std::string &addr, const 
 bool CLandRegister::del(const std::string &city,
                         const std::string &addr) {
 
+<<<<<<< HEAD
     if (!findByCity(city, addr)) return false;
 
     SLandlot *temp = new SLandlot(city, addr);
+=======
+    if(!findByCity(city, addr)) return false;
+
+    SLandlot * temp = new SLandlot(city, addr);
+>>>>>>> 561722c25b112a94b46cb6ecc585028034295dfc
     auto city_iter = lower_bound(city_arr.begin(), city_arr.end(), temp,
                                  compareCity);
 
